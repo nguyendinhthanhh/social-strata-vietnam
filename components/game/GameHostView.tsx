@@ -368,7 +368,7 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
                 <div>
                   <label className="text-stone-400 block mb-1 text-[11px]">Quy mô gói câu:</label>
                   <select
-                    value={gameState.settings?.questionCount || 12}
+                    value={gameState.settings?.questionCount || 15}
                     onChange={(e) =>
                       handleHostAction("UPDATE_SETTINGS", {
                         ...gameState.settings,
@@ -377,8 +377,10 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
                     }
                     className="w-full bg-black/50 text-stone-200 border border-white/20 rounded p-1.5 text-xs focus:ring-1 focus:ring-citron"
                   >
-                    <option value={12}>12 câu (Đại hội 3 vòng)</option>
-                    <option value={6}>6 câu (Tốc chiến 3 vòng)</option>
+                    <option value={15}>15 câu (Đại hội 3 vòng trọn vẹn)</option>
+                    <option value={12}>12 câu (Chuẩn thi đấu MLN131)</option>
+                    <option value={10}>10 câu (Gói tốc chiến 10 câu)</option>
+                    <option value={6}>6 câu (Khảo sát nhanh)</option>
                   </select>
                 </div>
               </div>

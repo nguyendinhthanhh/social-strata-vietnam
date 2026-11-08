@@ -45,7 +45,7 @@ export interface GamePlayer {
 
 export interface RoomSettings {
   timeLimitSeconds: number; // default 20s (options: 15, 20, 30)
-  questionCount: number; // default 12 (options: 6, 12)
+  questionCount: number; // default 15 (options: 15, 12, 10, 6)
   mode: "INDIVIDUAL" | "TEAM";
 }
 

@@ -65,14 +65,26 @@ function generateSecureToken(): string {
 }
 
 /**
- * Get active question set based on room settings (full 12 vs quick 6)
+ * Get active question set based on room settings (15 vs 12 vs 10 vs 6)
  */
 function getRoomQuestions(room: GameRoom): GameQuestion[] {
-  if (room.settings.questionCount === 6) {
-    // 2 questions per round
-    return QUESTIONS.filter((_, idx) => [0, 1, 5, 6, 9, 10].includes(idx));
+  const count = room.settings.questionCount || 15;
+  if (count === 15) {
+    return QUESTIONS;
   }
-  return QUESTIONS;
+  if (count === 12) {
+    // 4 questions per round (Total: 12)
+    return QUESTIONS.filter((_, idx) => [0, 1, 2, 4, 5, 6, 7, 8, 10, 11, 12, 14].includes(idx));
+  }
+  if (count === 10) {
+    // 3 questions in R1, 4 questions in R2, 3 questions in R3 (Total: 10)
+    return QUESTIONS.filter((_, idx) => [0, 1, 2, 5, 6, 7, 8, 11, 12, 14].includes(idx));
+  }
+  if (count === 6) {
+    // 2 questions per round (Total: 6)
+    return QUESTIONS.filter((_, idx) => [0, 1, 5, 6, 11, 14].includes(idx));
+  }
+  return QUESTIONS.slice(0, count);
 }
 
 /**
@@ -106,7 +118,7 @@ export function createGameRoom(
 
   const defaultSettings: RoomSettings = {
     timeLimitSeconds: initialSettings?.timeLimitSeconds || 20,
-    questionCount: initialSettings?.questionCount || 12,
+    questionCount: initialSettings?.questionCount || 15,
     mode: initialSettings?.mode || "INDIVIDUAL",
   };
 

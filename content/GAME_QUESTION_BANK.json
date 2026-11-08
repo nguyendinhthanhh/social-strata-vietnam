@@ -1,8 +1,8 @@
 {
   "title": "Đấu Trường Tri Thức — MLN131 Live Challenge",
-  "description": "Ngân hàng 12 câu hỏi đấu trường trực tiếp môn Chủ nghĩa xã hội khoa học — Chủ đề 7, Chương 5",
+  "description": "Ngân hàng 15 câu hỏi đấu trường trực tiếp môn Chủ nghĩa xã hội khoa học — Chủ đề 7, Chương 5",
   "totalRounds": 3,
-  "totalQuestions": 12,
+  "totalQuestions": 15,
   "rounds": [
     {
       "roundNumber": 1,
@@ -14,15 +14,15 @@
     {
       "roundNumber": 2,
       "title": "Vòng 2: Ai Giữ Vai Trò Gì?",
-      "description": "Định vị chính xác vị trí, vai trò và đóng góp lịch sử của 6 lực lượng xã hội (4 câu hỏi)",
-      "questionCount": 4,
+      "description": "Định vị chính xác vị trí, vai trò và đóng góp lịch sử của các lực lượng xã hội (5 câu hỏi)",
+      "questionCount": 5,
       "scoreMultiplier": 1.0
     },
     {
       "roundNumber": 3,
-      "title": "Vòng 3: Giải Mã Xã Hội (Điểm x1.5)",
-      "description": "Vận dụng thực tiễn, phân tích liên minh chuỗi giá trị và tính chất giao thoa nhân khẩu học (3 câu hỏi)",
-      "questionCount": 3,
+      "title": "Vòng 3: Giải Mã Xã Hội & Liên Minh (Điểm x1.5)",
+      "description": "Vận dụng thực tiễn, phân tích 3 nội dung liên minh và mô hình chuỗi giá trị (5 câu hỏi)",
+      "questionCount": 5,
       "scoreMultiplier": 1.5
     }
   ],
@@ -173,6 +173,22 @@
     },
     {
       "id": "Q-10",
+      "round": 2,
+      "prompt": "Văn kiện Đại hội Đảng và giáo trình MLN131 khẳng định lực lượng nào là 'rường cột của nước nhà, chủ nhân tương lai của đất nước, lực lượng xung kích trong xây dựng và bảo vệ Tổ quốc'?",
+      "options": [
+        "Tầng lớp thị dân đô thị tự do",
+        "Đội ngũ Thanh niên",
+        "Nhóm chuyên gia tư vấn nước ngoài",
+        "Các nhà đầu tư tài chính chứng khoán"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-20-10",
+      "sourceLabel": "MLN131_Tiet_20.pptx, Slide 10",
+      "explanation": "Đội ngũ Thanh niên là lực lượng xã hội to lớn, là rường cột của nước nhà, chủ nhân tương lai của đất nước; mang lý tưởng 'Tâm trong, Trí sáng, Hoài bão lớn', đóng vai trò xung kích trong đổi mới sáng tạo, chuyển đổi số và bảo vệ Tổ quốc."
+    },
+    {
+      "id": "Q-11",
       "round": 3,
       "prompt": "Vì sao trong phân tích xã hội học Mác – Lênin, Phụ nữ và Thanh niên KHÔNG được xếp thành một giai cấp kinh tế độc lập, mà được định vị là các lực lượng xã hội giao thoa?",
       "options": [
@@ -188,9 +204,57 @@
       "explanation": "Giai cấp được định hình bởi quan hệ sở hữu đối với TLSX và địa vị kinh tế. Phụ nữ và Thanh niên là các nhóm nhân khẩu học - xã hội giao thoa (intersectionality) trải rộng trong tất cả các giai tầng, đóng góp vào sức mạnh tổng hợp của khối liên minh."
     },
     {
-      "id": "Q-11",
+      "id": "Q-12",
       "round": 3,
-      "prompt": "Trong Đề án 1 triệu ha lúa chất lượng cao phát thải thấp (QĐ 1490/QĐ-TTg), sự gắn kết nào thể hiện rõ nét nhất liên minh Công nhân – Nông dân – Trí thức – Doanh nhân?",
+      "prompt": "Trong 3 nội dung của liên minh giai cấp, tầng lớp ở Việt Nam (Kinh tế, Chính trị, Văn hóa – Xã hội), nội dung nào giữ vai trò CƠ SỞ VẬT CHẤT – KỸ THUẬT và QUYẾT ĐỊNH tính bền vững lâu dài của khối liên minh?",
+      "options": [
+        "Nội dung Văn hóa – Xã hội",
+        "Nội dung Liên minh Kinh tế",
+        "Nội dung Chính trị – Tư tưởng",
+        "Nội dung Đối ngoại quốc tế"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-20-12",
+      "sourceLabel": "MLN131_Tiet_20.pptx, Slide 12",
+      "explanation": "Liên minh kinh tế là nội dung quan trọng nhất, giữ vai trò cơ sở vật chất - kỹ thuật quyết định sự gắn kết lâu bền của khối liên minh, thông qua việc thỏa mãn nhu cầu và kết hợp hài hòa lợi ích kinh tế giữa các giai cấp, tầng lớp."
+    },
+    {
+      "id": "Q-13",
+      "round": 3,
+      "prompt": "Mục tiêu cơ bản và nguyên tắc hàng đầu trong nội dung liên minh về CHÍNH TRỊ giữa các giai cấp, tầng lớp ở Việt Nam trong thời kỳ quá độ là gì?",
+      "options": [
+        "Triệt tiêu mọi sở hữu tư nhân và áp dụng chỉ tiêu hành chính tập trung",
+        "Bảo vệ vững chắc chế độ chính trị, giữ vững độc lập dân tộc, định hướng XHCN và bảo đảm sự lãnh đạo của Đảng Cộng sản Việt Nam",
+        "Thành lập chế độ đa nguyên chính trị, đa đảng đối lập",
+        "Tách rời chính trị khỏi các quy luật phát triển kinh tế thị trường"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-20-14",
+      "sourceLabel": "MLN131_Tiet_20.pptx, Slide 14-15",
+      "explanation": "Nội dung liên minh về chính trị nhằm bảo vệ vững chắc chế độ chính trị, độc lập dân tộc và định hướng đi lên CNXH; trong đó nguyên tắc cốt lõi là bảo đảm sự lãnh đạo của Đảng Cộng sản Việt Nam trong khối liên minh và phát huy dân chủ XHCN."
+    },
+    {
+      "id": "Q-14",
+      "round": 3,
+      "prompt": "Yêu cầu then chốt của liên minh trên lĩnh vực VĂN HÓA – XÃ HỘI trong thời kỳ quá độ lên CNXH ở Việt Nam là gì?",
+      "options": [
+        "Nhập khẩu nguyên mẫu các mô hình văn hóa đại chúng phương Tây",
+        "Gắn tăng trưởng kinh tế với phát triển văn hóa, thực hiện tiến bộ công bằng xã hội và thu hẹp khoảng cách giàu nghèo",
+        "Tuyệt đối hóa lợi ích kinh tế trước mắt, bỏ qua các chính sách an sinh xã hội",
+        "Duy trì nguyên trạng các tập quán sản xuất lạc hậu thời kỳ bao cấp"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-20-16",
+      "sourceLabel": "MLN131_Tiet_20.pptx, Slide 16-17",
+      "explanation": "Liên minh văn hóa – xã hội đòi hỏi phải gắn kết chặt chẽ tăng trưởng kinh tế với phát triển văn hóa, xây dựng con người toàn diện Chân - Thiện - Mỹ, thực hiện tiến bộ và công bằng xã hội, chăm lo an sinh và thu hẹp khoảng cách phân hóa giàu nghèo giữa các giai tầng."
+    },
+    {
+      "id": "Q-15",
+      "round": 3,
+      "prompt": "Trong Đề án 1 triệu ha lúa chất lượng cao phát thải thấp (QĐ 1490/QĐ-TTg), sự gắn kết nào thể hiện rõ nét nhất liên minh 4 nhà (Công nhân – Nông dân – Trí thức – Doanh nhân)?",
       "options": [
         "Trí thức nghiên cứu giống và quy trình xanh, Nông dân canh tác đạt chuẩn, Công nhân chế biến cơ giới hóa, Doanh nhân bao tiêu xuất khẩu",
         "Nông dân tự do bán lúa tươi cho thương lái trung gian không cần hợp đồng liên kết",
@@ -201,23 +265,7 @@
       "timeLimitSeconds": 20,
       "sourceId": "D-1490-01",
       "sourceLabel": "Quyết định 1490/QĐ-TTg & Slide 7 Tiết 20",
-      "explanation": "Chuỗi giá trị lúa gạo hiện đại là biểu hiện sống động của liên minh 4 nhà: Trí thức cung cấp công nghệ xanh, Nông dân canh tác theo chuẩn phát thải thấp, Công nhân vận hành nhà máy cơ giới, Doanh nhân ký hợp đồng bao tiêu và xây dựng thương hiệu quốc tế."
-    },
-    {
-      "id": "Q-12",
-      "round": 3,
-      "prompt": "Trong 3 nội dung của liên minh giai cấp, tầng lớp ở Việt Nam (Kinh tế, Chính trị, Văn hóa – Xã hội), nội dung nào giữ vai trò CƠ SỞ VẬT CHẤT và QUYẾT ĐỊNH tính bền vững lâu dài của khối liên minh?",
-      "options": [
-        "Nội dung Văn hóa – Xã hội",
-        "Nội dung Liên minh Kinh tế",
-        "Nội dung Chính trị – Tư tưởng",
-        "Nội dung Đối ngoại quốc tế"
-      ],
-      "correctIndex": 1,
-      "timeLimitSeconds": 20,
-      "sourceId": "C-20-03",
-      "sourceLabel": "MLN131_Tiet_20.pptx, Slide 3-5",
-      "explanation": "Liên minh kinh tế là nội dung quan trọng nhất, giữ vai trò cơ sở vật chất - kỹ thuật quyết định sự gắn kết lâu bền của khối liên minh, thông qua việc kết hợp hài hòa lợi ích kinh tế giữa các giai cấp, tầng lớp."
+      "explanation": "Chuỗi giá trị lúa gạo hiện đại là biểu hiện sống động của liên minh: Trí thức cung cấp giống và giải pháp giảm phát thải, Nông dân tổ chức canh tác hợp tác xã, Công nhân vận hành logistics và chế biến hiện đại, Doanh nhân bao tiêu và định vị thương hiệu quốc tế."
     }
   ]
 }
