@@ -88,34 +88,26 @@ body {
 
 /* Ensure all exhibition scenes have scroll-margin-top so sticky header never occludes headers */
 section[id^="scene-"] {
-  scroll-margin-top: 4.5rem;
+  scroll-margin-top: 5rem;
 }
 
-/* Reduced Motion Override */
+/* Reduced Motion Override for decorative animations without killing smooth navigation */
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto !important;
-  }
   *,
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
   }
 }
 
-html.reduced-motion {
-  scroll-behavior: auto !important;
-}
 html.reduced-motion *,
 html.reduced-motion *::before,
 html.reduced-motion *::after {
   animation-duration: 0.01ms !important;
   animation-iteration-count: 1 !important;
   transition-duration: 0.01ms !important;
-  scroll-behavior: auto !important;
 }
 
 /* Accessible focus visible */

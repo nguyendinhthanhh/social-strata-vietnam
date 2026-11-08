@@ -18,6 +18,9 @@ import {
   ExternalLink,
   ShieldAlert,
   BookOpen,
+  Wifi,
+  Globe,
+  Laptop,
 } from "lucide-react";
 
 interface GameHostViewProps {
@@ -40,6 +43,25 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
   const [remainingSeconds, setRemainingSeconds] = useState<number>(
     initialState.timeLimitSeconds
   );
+  const [detectedLanIp, setDetectedLanIp] = useState<string>("");
+  const [hostType, setHostType] = useState<"WIFI" | "LOCALHOST" | "CUSTOM">("WIFI");
+  const [customOrigin, setCustomOrigin] = useState<string>("");
+
+  // Detect Host LAN IP on mount
+  useEffect(() => {
+    const fetchNetworkInfo = async () => {
+      try {
+        const res = await fetch("/api/game/network-info");
+        const data = await res.json();
+        if (data.success && data.primaryIp && data.primaryIp !== "localhost") {
+          setDetectedLanIp(data.primaryIp);
+        }
+      } catch {
+        // Fallback gracefully
+      }
+    };
+    fetchNetworkInfo();
+  }, []);
 
   // Poll synchronized room state every 1000ms
   const fetchState = useCallback(async () => {
@@ -93,10 +115,38 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
     }
   };
 
-  const joinUrl =
-    typeof window !== "undefined"
-      ? `${window.location.origin}?joinRoom=${roomCode}#scene-06`
-      : `http://localhost:3000?joinRoom=${roomCode}#scene-06`;
+  const computeJoinUrl = () => {
+    if (typeof window === "undefined") {
+      return `http://localhost:3000?joinRoom=${roomCode}#scene-06`;
+    }
+
+    const isLocal =
+      window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1";
+    const port = window.location.port ? `:${window.location.port}` : "";
+
+    if (!isLocal) {
+      return `${window.location.origin}?joinRoom=${roomCode}#scene-06`;
+    }
+
+    if (hostType === "CUSTOM" && customOrigin.trim()) {
+      const cleanCustom = customOrigin.trim().replace(/\/$/, "");
+      return `${cleanCustom}?joinRoom=${roomCode}#scene-06`;
+    }
+
+    if (hostType === "LOCALHOST") {
+      return `${window.location.origin}?joinRoom=${roomCode}#scene-06`;
+    }
+
+    // Default: use detected LAN IP if available for phones
+    if (detectedLanIp) {
+      return `http://${detectedLanIp}${port}?joinRoom=${roomCode}#scene-06`;
+    }
+
+    return `${window.location.origin}?joinRoom=${roomCode}#scene-06`;
+  };
+
+  const joinUrl = computeJoinUrl();
 
   const copyJoinLink = () => {
     if (typeof navigator !== "undefined" && navigator.clipboard) {
@@ -174,20 +224,20 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <QRCodeDisplay url={joinUrl} size={160} />
-              <div className="space-y-2 text-left">
+              <div className="space-y-2 text-left w-full sm:w-auto">
                 <div className="bg-charcoal-deep p-3 rounded-sm border border-white/10 space-y-1">
-                  <span className="text-[11px] font-mono text-stone-400 block">Đường dẫn trực tiếp:</span>
+                  <span className="text-[11px] font-mono text-stone-400 block">Đường dẫn tham gia:</span>
                   <div className="flex items-center gap-2">
                     <input
                       type="text"
                       readOnly
                       value={joinUrl}
-                      className="bg-black/40 text-xs font-mono text-stone-300 px-2 py-1 rounded border border-white/10 w-44"
+                      className="bg-black/40 text-xs font-mono text-stone-300 px-2 py-1 rounded border border-white/10 w-full sm:w-56"
                     />
                     <button
                       type="button"
                       onClick={copyJoinLink}
-                      className="p-1.5 rounded bg-white/10 hover:bg-white/20 text-chalk text-xs font-mono flex items-center gap-1"
+                      className="p-1.5 rounded bg-white/10 hover:bg-white/20 text-chalk text-xs font-mono flex items-center gap-1 flex-shrink-0"
                       title="Sao chép liên kết tham gia"
                     >
                       <Copy className="w-3.5 h-3.5" />
@@ -203,6 +253,92 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
                     <strong className="text-white text-sm">{gameState.totalParticipants}</strong>
                   </span>
                 </div>
+              </div>
+            </div>
+
+            {/* Host Network Mode Switcher */}
+            <div className="bg-charcoal-deep/90 p-3.5 rounded-sm border border-white/10 space-y-2.5 text-left">
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] font-mono text-stone-300 font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <Wifi className="w-3.5 h-3.5 text-citron" />
+                  Mạng phát phòng cho điện thoại
+                </span>
+                <span className="text-[10px] font-mono text-citron font-semibold">
+                  {hostType === "WIFI" && (detectedLanIp ? `Wi-Fi: ${detectedLanIp}` : "Tự động")}
+                  {hostType === "LOCALHOST" && "Localhost"}
+                  {hostType === "CUSTOM" && "Tùy chỉnh"}
+                </span>
+              </div>
+
+              {/* Selector Tabs */}
+              <div className="grid grid-cols-3 gap-1 p-1 bg-black/40 rounded border border-white/10 text-[11px] font-mono">
+                <button
+                  type="button"
+                  onClick={() => setHostType("WIFI")}
+                  className={`py-1.5 px-2 rounded text-center transition-all flex items-center justify-center gap-1 ${
+                    hostType === "WIFI"
+                      ? "bg-citron text-carbon font-bold shadow-xs"
+                      : "text-stone-400 hover:text-white"
+                  }`}
+                  title="Khuyên dùng cho điện thoại trong cùng lớp học / phòng Wi-Fi"
+                >
+                  <Wifi className="w-3 h-3" />
+                  <span>Wi-Fi LAN</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setHostType("LOCALHOST")}
+                  className={`py-1.5 px-2 rounded text-center transition-all flex items-center justify-center gap-1 ${
+                    hostType === "LOCALHOST"
+                      ? "bg-citron text-carbon font-bold shadow-xs"
+                      : "text-stone-400 hover:text-white"
+                  }`}
+                  title="Chỉ mở trên máy tính này để thử nghiệm"
+                >
+                  <Laptop className="w-3 h-3" />
+                  <span>Máy này</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setHostType("CUSTOM")}
+                  className={`py-1.5 px-2 rounded text-center transition-all flex items-center justify-center gap-1 ${
+                    hostType === "CUSTOM"
+                      ? "bg-citron text-carbon font-bold shadow-xs"
+                      : "text-stone-400 hover:text-white"
+                  }`}
+                  title="Nhập domain / Ngrok / Cloudflare Tunnel cho sinh viên dùng 4G"
+                >
+                  <Globe className="w-3 h-3" />
+                  <span>Tùy chỉnh</span>
+                </button>
+              </div>
+
+              {/* Custom URL Input if selected */}
+              {hostType === "CUSTOM" && (
+                <div className="space-y-1 pt-1">
+                  <label className="text-[10px] font-mono text-stone-400 block">
+                    Nhập địa chỉ Domain / Tunnel (ví dụ: https://abcd.ngrok-free.app):
+                  </label>
+                  <input
+                    type="text"
+                    value={customOrigin}
+                    onChange={(e) => setCustomOrigin(e.target.value)}
+                    placeholder="https://trienlam-mln131.vn"
+                    className="w-full bg-black/60 text-xs font-mono text-citron px-2.5 py-1.5 rounded border border-white/20 focus:outline-none focus:border-citron"
+                  />
+                </div>
+              )}
+
+              {/* Wi-Fi Guidance Alert */}
+              <div className="p-2.5 rounded bg-white/5 border border-citron/20 text-[11px] font-sans text-stone-300 leading-normal space-y-1">
+                <p>
+                  📱 <strong>Để điện thoại quét mã vào được:</strong> Điện thoại của sinh viên cần kết nối <strong>cùng mạng Wi-Fi</strong> với máy tính này (hoặc máy tính bật Mobile Hotspot cho điện thoại bắt).
+                </p>
+                {detectedLanIp && (
+                  <p className="text-citron font-mono text-[10px]">
+                    📍 Địa chỉ mạng Wi-Fi của máy bạn: <strong>http://{detectedLanIp}:3000</strong>
+                  </p>
+                )}
               </div>
             </div>
 

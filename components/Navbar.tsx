@@ -201,15 +201,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSourceModal }) => {
     }
     const element = document.getElementById(id);
     if (element) {
-      const headerOffset = 64;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: Math.max(0, offsetPosition),
-        behavior: "smooth",
-      });
-
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
       window.history.pushState(null, "", `#${id}`);
       setActiveSection(id);
     }
@@ -227,15 +219,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSourceModal }) => {
       }
       const element = document.getElementById(id);
       if (element) {
-        const headerOffset = 64;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-          top: Math.max(0, offsetPosition),
-          behavior: "smooth",
-        });
-
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
         window.history.pushState(null, "", `#${id}`);
         setActiveSection(id);
       }
