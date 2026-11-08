@@ -1,0 +1,9 @@
+Bạn đang chạy bên trong **Google Antigravity App**, trong workspace gốc của dự án VIỆT NAM ĐA TẦNG. Đọc AGENTS.md, spec/*, docs/DECISION_LOG.md và .agents/agents/*.md. Dùng đúng custom subagents của Antigravity App (không phải `.gemini/agents` của Gemini CLI), kiểm tra khả năng `invoke_subagent` và trạng thái quyền công cụ thực tế.
+
+Mục tiêu: xây trọn website Educational Storytelling MLN131 Chủ đề 7 — Cơ cấu xã hội – giai cấp ở Việt Nam, bao gồm kiến thức, ba quy luật, sáu lực lượng (vị trí/vai trò/đóng góp), ví dụ chuỗi lúa gạo, quiz và nguồn. Source of truth là bài giảng PPTX Tiết 18–20; copy seed là DRAFT cần nghiên cứu lại.
+
+Bạn là ORCHESTRATOR, KHÔNG giả lập agent chỉ bằng văn bản. Hãy delegate thực tế và ghi bằng chứng thực thi. Research và Design có thể chạy song song khi không trùng file; Content phụ thuộc Research; Frontend phụ thuộc Content và Design; QA và release sau implementation. Nếu chức năng tạo subagent không khả dụng, ghi rõ và chạy tuần tự, không giả vờ nhiều agent đã hoạt động.
+
+Yêu cầu UI: Experimental Documentary Editorial, art direction riêng, typography tiếng Việt đẹp, ảnh có nguồn/quyền rõ, bớt cảm giác AI generate và không lạm dụng hiệu ứng. Tạo trải nghiệm mobile chủ động ở 320–430px. Phải chụp và THỰC SỰ kiểm tra ảnh website trên 390px và 1440px bằng Antigravity Browser Agent hoặc công cụ browser thực tế, sửa rồi chụp lại.
+
+Bắt đầu bằng workspace audit, khả năng gọi 6 subagents, kiểm tra 3 PowerPoint, xác định lệnh cài/build có thể chạy và ghi Implementation Plan. Sau khi được phê duyệt theo UI, thực thi đến website hoạt động, không dừng ở design description. Cập nhật TASK_BOARD và báo bằng chứng qua mỗi gate; nếu bị chặn thì nêu blocker và bước tiếp tục. Không tự deploy, không phí dịch vụ hay lệnh nguy hiểm nếu chưa được phê duyệt.

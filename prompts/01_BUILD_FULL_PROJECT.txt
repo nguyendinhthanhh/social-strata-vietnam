@@ -1,0 +1,13 @@
+Tiếp tục dự án dựa trên AGENTS.md và tiến độ thực tế trong spec/TASK_BOARD.md. Bạn là MAIN ORCHESTRATOR trong Google Antigravity App.
+
+HÃY XÂY DỰNG WEBSITE THỰC SỰ, không chỉ viết kế hoạch. Áp dụng quy trình G0→G5 trong spec/QUALITY_GATES.md với các subagents thực tế `.agents/agents/`:
+(1) research-auditor kiểm chứng giáo trình PPTX và nguồn, xuất ACADEMIC_AUDIT, SOURCE_LEDGER;
+(2) content-editor viết STORY_FINAL + quiz và source map theo kết quả audit;
+(3) art-director chọn giữa 2 art directions, tạo tokens, layout mobile/desktop riêng;
+(4) frontend-engineer xây Next.js TS Tailwind, tất cả scene và chức năng;
+(5) accessibility-qa viết/chạy test và ghi các lỗi;
+(6) release-engineer thực thi và xác minh build/lint/typecheck/tests, docs handoff.
+
+Được phép làm các hạng mục không phụ thuộc nhau song song nhưng cấm chồng lấn file. Khi code xong, chạy dev server, kiểm tra bằng browser tại 390x844 và 1440x900, thu nhận screenshot thật, art-director review, implement fixes, test lại. Với Browser Agent của Antigravity, nếu cần lệnh `/browser` do người dùng kích hoạt, hãy nêu đúng prompt cụ thể mà tôi cần gửi; không được báo PASS khi chưa có screenshot đã inspect.
+
+Trong quá trình làm, ưu tiên các quy tắc học thuật và thiết kế trong project. Đừng bịa stats, URLs hay mockup giả ảnh lịch sử. Không dừng sau khi tạo stub; mục tiêu là app chạy từ đầu tới cuối. Sau mỗi gate, lưu trạng thái/đường dẫn vào TASK_BOARD và decision log. Khi gặp giới hạn quota/context, cung cấp checkpoint rõ để tiếp tục phiên sau.

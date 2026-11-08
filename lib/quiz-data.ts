@@ -1,0 +1,144 @@
+import { QuizQuestion } from "./types";
+
+export const QUIZ_QUESTIONS: QuizQuestion[] = [
+  {
+    id: "mln131-q1",
+    questionNumber: 1,
+    topic: "Bản chất Cơ cấu Xã hội – Giai cấp",
+    question: "Trong các mối quan hệ xã hội, yếu tố nào giữ vai trò quyết định trực tiếp khi xác định bản chất của cơ cấu xã hội – giai cấp?",
+    options: [
+      {
+        id: "A",
+        text: "Sự khác biệt về niềm tin tôn giáo và phong tục tập quán truyền thống của các cộng đồng.",
+      },
+      {
+        id: "B",
+        text: "Mối quan hệ thuần túy về mức thu nhập cá nhân hàng tháng và sở thích tiêu dùng cá nhân.",
+      },
+      {
+        id: "C",
+        text: "Mối quan hệ về sở hữu tư liệu sản xuất, tổ chức quản lý quá trình sản xuất và địa vị chính trị – xã hội giữa các giai cấp, tầng lớp.",
+      },
+      {
+        id: "D",
+        text: "Sự phân bố địa lý và mật độ cư trú giữa cư dân khu vực thành thị và nông thôn.",
+      },
+    ],
+    correctAnswer: "C",
+    sourceId: "C-18-05",
+    sourceCitation: "Bài giảng MLN131, Tiết 18, Slide 5",
+    explanation: "Theo lý luận Chủ nghĩa xã hội khoa học (Tiết 18, Slide 5), cơ cấu xã hội – giai cấp được xác định thông qua 3 mối quan hệ kinh tế - chính trị cốt lõi: (1) Quan hệ sở hữu tư liệu sản xuất; (2) Quan hệ tổ chức quản lý quá trình sản xuất; (3) Quan hệ về địa vị chính trị – xã hội và phân phối của cải. Các yếu tố như nơi cư trú, tôn giáo, mức thu nhập bề nổi thuộc về các phân hệ cơ cấu xã hội khác hoặc chỉ là biểu hiện phái sinh.",
+  },
+  {
+    id: "mln131-q2",
+    questionNumber: 2,
+    topic: "Quy luật Biến đổi Cơ cấu Xã hội – Giai cấp",
+    question: "Theo lý luận Chủ nghĩa xã hội khoa học, sự biến đổi của cơ cấu xã hội – giai cấp trong thời kỳ quá độ lên chủ nghĩa xã hội bị quy định trực tiếp bởi yếu tố nào?",
+    options: [
+      {
+        id: "A",
+        text: "Sự biến đổi và phát triển của cơ cấu kinh tế (bao gồm cơ cấu ngành nghề, các thành phần kinh tế và cơ chế vận hành kinh tế).",
+      },
+      {
+        id: "B",
+        text: "Ý muốn chủ quan và mệnh lệnh hành chính của các cơ quan quản lý nhà nước trong từng giai đoạn.",
+      },
+      {
+        id: "C",
+        text: "Tác động đơn phương từ xu thế tiêu dùng và thị hiếu biến động ngắn hạn của thị trường quốc tế.",
+      },
+      {
+        id: "D",
+        text: "Sự thay đổi ngẫu nhiên của các trào lưu lối sống và văn hóa tiêu dùng đô thị mới.",
+      },
+    ],
+    correctAnswer: "A",
+    sourceId: "C-18-11",
+    sourceCitation: "Bài giảng MLN131, Tiết 18, Slide 11",
+    explanation: "Quy luật số 1 (Tiết 18, Slide 11) khẳng định: Cơ cấu xã hội – giai cấp biến đổi gắn liền và bị quy định bởi cơ cấu kinh tế của thời kỳ quá độ. Phương thức sản xuất và cơ cấu kinh tế (chuyển dịch ngành từ nông nghiệp sang công nghiệp - dịch vụ - công nghệ số, nền kinh tế nhiều thành phần) là cơ sở vật chất - kỹ thuật khách quan quyết định sự biến chuyển của các giai cấp, tầng lớp trong xã hội.",
+  },
+  {
+    id: "mln131-q3",
+    questionNumber: 3,
+    topic: "Khối Liên minh Nền tảng Chính trị – Xã hội",
+    question: "Trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam, khối liên minh giai cấp, tầng lớp nào giữ vai trò là nền tảng chính trị – xã hội cơ bản của chế độ?",
+    options: [
+      {
+        id: "A",
+        text: "Khối liên hiệp thương mại giữa các tập đoàn kinh tế tư nhân và hiệp hội ngành hàng lớn.",
+      },
+      {
+        id: "B",
+        text: "Khối liên kết tự phát theo địa bàn giữa cư dân đô thị và cư dân nông thôn không mang định hướng chính trị.",
+      },
+      {
+        id: "C",
+        text: "Sự thỏa hiệp mang tính giai đoạn giữa các nhóm nghề nghiệp khác nhau trong xã hội.",
+      },
+      {
+        id: "D",
+        text: "Khối liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức dưới sự lãnh đạo của Đảng Cộng sản Việt Nam.",
+      },
+    ],
+    correctAnswer: "D",
+    sourceId: "C-19-08",
+    sourceCitation: "Bài giảng MLN131, Tiết 19, Slide 8; Tiết 20, Slide 5",
+    explanation: "Bài giảng MLN131 (Tiết 19, Slide 8; Tiết 20, Slide 5) chỉ rõ: Liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức dưới sự lãnh đạo của Đảng Cộng sản là nền tảng chính trị – xã hội của chế độ, là điều kiện tiên quyết đảm bảo vai trò lãnh đạo của giai cấp công nhân và tạo ra sức mạnh tổng hợp quyết định thắng lợi của sự nghiệp xây dựng chủ nghĩa xã hội.",
+  },
+  {
+    id: "mln131-q4",
+    questionNumber: 4,
+    topic: "Bản chất Phân loại Học thuật Phụ nữ & Thanh niên",
+    question: "Vì sao trong cơ cấu xã hội Việt Nam hiện nay, phụ nữ và thanh niên được xác định là các lực lượng xã hội quan trọng nhưng không phải là những giai cấp kinh tế độc lập?",
+    options: [
+      {
+        id: "A",
+        text: "Vì phụ nữ và thanh niên là những nhóm xã hội phân loại theo giới tính và độ tuổi, hiện diện giao thoa xuyên suốt trong tất cả các giai cấp, tầng lớp.",
+      },
+      {
+        id: "B",
+        text: "Vì phụ nữ và thanh niên không trực tiếp tham gia vào các công đoạn sản xuất của cải vật chất công - nông nghiệp.",
+      },
+      {
+        id: "C",
+        text: "Vì phụ nữ và thanh niên chỉ sinh hoạt và hoạt động hạn chế trong phạm vi đời sống gia đình hoặc nhà trường.",
+      },
+      {
+        id: "D",
+        text: "Vì phụ nữ và thanh niên chưa được luật pháp công nhận quyền và nghĩa vụ trong các hoạt động kinh tế.",
+      },
+    ],
+    correctAnswer: "A",
+    sourceId: "C-20-09",
+    sourceCitation: "Bài giảng MLN131, Tiết 20, Slide 9, 10; Luật Thanh niên 2020",
+    explanation: "Trong lý luận Mác - Lênin, giai cấp kinh tế được xác định theo quan hệ đối với tư liệu sản xuất và phân công lao động xã hội. Trong khi đó, Phụ nữ (phân loại theo giới tính) và Thanh niên (phân loại theo độ tuổi từ 16 đến 30 theo Luật Thanh niên 2020) là các nhóm nhân khẩu học xã hội giao thoa: họ có mặt trong lòng giai cấp công nhân, giai cấp nông dân, đội ngũ trí thức và đội ngũ doanh nhân, chứ không tạo thành một giai cấp kinh tế biệt lập (Tiết 20, Slide 9–10).",
+  },
+  {
+    id: "mln131-q5",
+    questionNumber: 5,
+    topic: "Ý nghĩa Mô hình Sư phạm Chuỗi Lúa gạo",
+    question: "Hình ảnh chuỗi giá trị 'Hạt gạo liên minh' trong bài học phản ánh sinh động nội dung lý luận nào của Chương 5?",
+    options: [
+      {
+        id: "A",
+        text: "Hoạt động canh tác nông nghiệp biệt lập truyền thống của người nông dân không cần sự hỗ trợ của công nghiệp và khoa học.",
+      },
+      {
+        id: "B",
+        text: "Nội dung liên minh kinh tế khách quan giữa nông dân, trí thức khoa học, công nhân công nghiệp và doanh nhân cùng tạo ra giá trị gia tăng.",
+      },
+      {
+        id: "C",
+        text: "Quy trình phát triển sinh học thuần túy của cây lúa nước không có mối liên hệ với các quan hệ sản xuất xã hội.",
+      },
+      {
+        id: "D",
+        text: "Sự chi phối tuyệt đối của cơ chế thị trường tự do loại bỏ hoàn toàn vai trò của các giai tầng lao động trong nước.",
+      },
+    ],
+    correctAnswer: "B",
+    sourceId: "C-RICE-ILLUS",
+    sourceCitation: "Bài giảng MLN131, Tiết 19, Slide 9; Tiết 20, Slide 12; QĐ 1490/QĐ-TTg",
+    explanation: "Mô hình sư phạm 'Hạt gạo liên minh' phản ánh sinh động nội dung liên minh kinh tế (Tiết 19, Slide 9; Tiết 20, Slide 12): Trí thức cung cấp giống và quy trình kỹ thuật canh tác sạch, Nông dân tổ chức sản xuất trên đất sở hữu toàn dân, Công nhân cơ giới hóa thu hoạch và chế biến sâu, Doanh nhân đầu tư vốn và kết nối thị trường xuất khẩu quốc tế. Đây là minh chứng cụ thể cho sự gắn kết nhu cầu và lợi ích kinh tế khách quan giữa các lực lượng xã hội.",
+  },
+];

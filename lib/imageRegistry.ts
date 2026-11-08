@@ -1,0 +1,241 @@
+/**
+ * VIỆT NAM ĐA TẦNG — Sổ Đăng Ký Hình Ảnh & Bản Quyền Tư Liệu Phóng Sự
+ * Khai báo kiểu và danh mục 18 tệp hình ảnh tư liệu phóng sự chính thức
+ */
+
+export interface DocumentaryImage {
+  id: string;
+  src: string;
+  alt: string;
+  caption: string;
+  author: string;
+  source: string;
+  license: string;
+  sourceUrl: string;
+  category: string;
+  scene: 'scene-01' | 'scene-02' | 'scene-03' | 'scene-04' | 'scene-05' | 'scene-06';
+}
+
+export const DOCUMENTARY_IMAGES: Record<string, DocumentaryImage> = {
+  "hero-skyline": {
+    "id": "hero-skyline",
+    "src": "/images/hero_skyline.jpg",
+    "alt": "Toàn cảnh đô thị hiện đại TP. Hồ Chí Minh trong ánh bình minh",
+    "caption": "Toàn cảnh không gian kinh tế - xã hội hiện đại của Việt Nam: Đô thị hóa, công nghiệp hóa và nhịp sống lao động thời kỳ quá độ.",
+    "author": "Wikimedia Commons Contributor / Thành phố Hồ Chí Minh",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 4.0 / Public Domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_panorama_2019.jpg",
+    "category": "urban-environment",
+    "scene": "scene-01"
+  },
+  "hero-factory-prologue": {
+    "id": "hero-factory-prologue",
+    "src": "/images/factory_workers.jpg",
+    "alt": "Công nhân và kỹ sư công nghiệp trong dây chuyền sản xuất hiện đại tại Việt Nam",
+    "caption": "Người lao động công nghiệp trong dây chuyền sản xuất hiện đại: Lực lượng tiên phong của nền kinh tế độc lập tự chủ.",
+    "author": "Mercedes-Benz Vietnam Archives",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz-Vietnam_factory_workers_management.jpg",
+    "category": "industrial-workers",
+    "scene": "scene-01"
+  },
+  "infrastructure-dam": {
+    "id": "infrastructure-dam",
+    "src": "/images/infrastructure_dam.jpg",
+    "alt": "Công trình Thủy điện Hòa Bình - Biểu tượng tư liệu sản xuất huyết mạch sở hữu toàn dân",
+    "caption": "Thủy điện Hòa Bình: Hạ tầng năng lượng trọng yếu thuộc sở hữu toàn dân do Nhà nước đại diện chủ sở hữu và thống nhất quản lý (Điều 53 Hiến pháp 2013).",
+    "author": "Wikimedia Commons Contributor",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0 / GFDL",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoa_Binh_Dam_in_Vietnam.jpg",
+    "category": "infrastructure",
+    "scene": "scene-02"
+  },
+  "scene2-structure-slide": {
+    "id": "scene2-structure-slide",
+    "src": "/images/scene2_structure_slide.jpg",
+    "alt": "Tư liệu bài giảng MLN131 Tiết 18: Sự biến đổi có tính quy luật của cơ cấu xã hội - giai cấp",
+    "caption": "Tư liệu giảng dạy chính thức MLN131 Tiết 18 Slide 13: Ba mối quan hệ cấu thành cơ cấu xã hội - giai cấp trong nền kinh tế thị trường định hướng XHCN.",
+    "author": "Bộ môn Lý luận chính trị, Đại học FPT",
+    "source": "Bài giảng PPTX MLN131 Tiết 18 Slide 13",
+    "license": "Giáo trình đào tạo nội bộ / Trích dẫn học thuật",
+    "sourceUrl": "references/course/MLN131_Tiet_18.pptx",
+    "category": "academic-courseware",
+    "scene": "scene-02"
+  },
+  "scene3-transition-slide": {
+    "id": "scene3-transition-slide",
+    "src": "/images/scene3_transition_slide.jpg",
+    "alt": "Tư liệu bài giảng MLN131 Tiết 19: Liên minh giai cấp, tầng lớp trong thời kỳ quá độ",
+    "caption": "Tư liệu giảng dạy MLN131 Tiết 19 Slide 4: Quy luật biến đổi cơ cấu xã hội - giai cấp gắn liền và bị quy định bởi cơ cấu kinh tế.",
+    "author": "Bộ môn Lý luận chính trị, Đại học FPT",
+    "source": "Bài giảng PPTX MLN131 Tiết 19 Slide 4",
+    "license": "Giáo trình đào tạo nội bộ / Trích dẫn học thuật",
+    "sourceUrl": "references/course/MLN131_Tiet_19.pptx",
+    "category": "academic-courseware",
+    "scene": "scene-03"
+  },
+  "worker-sewist": {
+    "id": "worker-sewist",
+    "src": "/images/worker_sewist.jpg",
+    "alt": "Nữ công nhân ngành may công nghiệp Việt Nam",
+    "caption": "Người lao động trong ngành công nghiệp xuất khẩu: Minh chứng cho sự phát triển về số lượng và chất lượng của giai cấp công nhân Việt Nam.",
+    "author": "Wikimedia Commons Contributor",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sewist_Vietnam.jpg",
+    "category": "workers",
+    "scene": "scene-03"
+  },
+  "portrait-worker": {
+    "id": "portrait-worker",
+    "src": "/images/portrait_worker_slide.jpg",
+    "alt": "Chân dung Giai cấp Công nhân Việt Nam - Tiền phong cách mạng",
+    "caption": "Giai cấp công nhân Việt Nam: Lãnh đạo cách mạng thông qua Đảng Cộng sản, đại diện cho phương thức sản xuất tiên tiến, tiên phong CNH - HĐH.",
+    "author": "Bộ môn Lý luận chính trị, Đại học FPT",
+    "source": "Bài giảng PPTX MLN131 Tiết 20 Slide 5",
+    "license": "Giáo trình đào tạo nội bộ / Trích dẫn học thuật",
+    "sourceUrl": "references/course/MLN131_Tiet_20.pptx",
+    "category": "social-class",
+    "scene": "scene-04"
+  },
+  "portrait-farmer": {
+    "id": "portrait-farmer",
+    "src": "/images/portrait_farmer_slide.jpg",
+    "alt": "Chân dung Giai cấp Nông dân Việt Nam - Chủ thể phát triển nông nghiệp, nông thôn mới",
+    "caption": "Giai cấp nông dân: Có vị trí chiến lược trong sự nghiệp CNH - HĐH nông nghiệp, giữ gìn bản sắc văn hóa và là chủ thể xây dựng nông thôn mới.",
+    "author": "Bộ môn Lý luận chính trị, Đại học FPT",
+    "source": "Bài giảng PPTX MLN131 Tiết 20 Slide 6",
+    "license": "Giáo trình đào tạo nội bộ / Trích dẫn học thuật",
+    "sourceUrl": "references/course/MLN131_Tiet_20.pptx",
+    "category": "social-class",
+    "scene": "scene-04"
+  },
+  "portrait-intellectual": {
+    "id": "portrait-intellectual",
+    "src": "/images/portrait_intellectual_slide.jpg",
+    "alt": "Chân dung Đội ngũ Trí thức Việt Nam - Lao động sáng tạo đặc biệt quan trọng",
+    "caption": "Đội ngũ trí thức: Lực lượng lao động sáng tạo đặc biệt quan trọng trong sự nghiệp CNH, HĐH và hội nhập, xây dựng nền kinh tế tri thức.",
+    "author": "Bộ môn Lý luận chính trị, Đại học FPT",
+    "source": "Bài giảng PPTX MLN131 Tiết 20 Slide 7",
+    "license": "Giáo trình đào tạo nội bộ / Trích dẫn học thuật",
+    "sourceUrl": "references/course/MLN131_Tiet_20.pptx",
+    "category": "social-stratum",
+    "scene": "scene-04"
+  },
+  "portrait-entrepreneur": {
+    "id": "portrait-entrepreneur",
+    "src": "/images/portrait_entrepreneur_slide.jpg",
+    "alt": "Chân dung Đội ngũ Doanh nhân Việt Nam - Động lực phát triển kinh tế",
+    "caption": "Đội ngũ doanh nhân: Tầng lớp xã hội đặc biệt phát triển nhanh trong kinh tế thị trường định hướng XHCN, động lực quan trọng tạo việc làm và tăng trưởng.",
+    "author": "Bộ môn Lý luận chính trị, Đại học FPT",
+    "source": "Bài giảng PPTX MLN131 Tiết 20 Slide 8",
+    "license": "Giáo trình đào tạo nội bộ / Trích dẫn học thuật",
+    "sourceUrl": "references/course/MLN131_Tiet_20.pptx",
+    "category": "social-stratum",
+    "scene": "scene-04"
+  },
+  "portrait-women": {
+    "id": "portrait-women",
+    "src": "/images/portrait_women_slide.jpg",
+    "alt": "Hình ảnh Phụ nữ Việt Nam trong mọi lĩnh vực kinh tế - xã hội",
+    "caption": "Phụ nữ: Lực lượng xã hội quan trọng và đông đảo, giao thoa trong mọi giai cấp, khẳng định vai trò then chốt trong bình đẳng giới và phát triển bền vững.",
+    "author": "Bộ môn Lý luận chính trị, Đại học FPT",
+    "source": "Bài giảng PPTX MLN131 Tiết 20 Slide 9",
+    "license": "Giáo trình đào tạo nội bộ / Trích dẫn học thuật",
+    "sourceUrl": "references/course/MLN131_Tiet_20.pptx",
+    "category": "demographic-crosscutting",
+    "scene": "scene-04"
+  },
+  "portrait-youth": {
+    "id": "portrait-youth",
+    "src": "/images/portrait_youth_slide.jpg",
+    "alt": "Chân dung Đội ngũ Thanh niên Việt Nam - Rường cột của nước nhà",
+    "caption": "Đội ngũ thanh niên: Rường cột của nước nhà, chủ nhân tương lai của đất nước, lực lượng xung kích trong xây dựng và bảo vệ Tổ quốc.",
+    "author": "Bộ môn Lý luận chính trị, Đại học FPT",
+    "source": "Bài giảng PPTX MLN131 Tiết 20 Slide 10",
+    "license": "Giáo trình đào tạo nội bộ / Trích dẫn học thuật",
+    "sourceUrl": "references/course/MLN131_Tiet_20.pptx",
+    "category": "demographic-crosscutting",
+    "scene": "scene-04"
+  },
+  "students-university": {
+    "id": "students-university",
+    "src": "/images/students_university.jpg",
+    "alt": "Sinh viên đại học Việt Nam trong môi trường học thuật sáng tạo",
+    "caption": "Thế hệ trẻ và sinh viên Việt Nam: Đại diện tiêu biểu cho sự giao thoa nhân khẩu học, tiếp cận tri thức công nghệ cao phục vụ đất nước.",
+    "author": "Wikimedia Commons Contributor / SGU",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Students_of_the_Saigon_University_(SGU),_Vietnam.jpg",
+    "category": "youth",
+    "scene": "scene-04"
+  },
+  "rice-field-paddy": {
+    "id": "rice-field-paddy",
+    "src": "/images/rice_field_paddy.jpg",
+    "alt": "Ruộng lúa bậc thang và đồng bằng Việt Nam",
+    "caption": "Cánh đồng lúa Việt Nam: Nền tảng vật chất của an ninh lương thực quốc gia và khởi nguồn của chuỗi giá trị hạt gạo liên minh.",
+    "author": "Wikimedia Commons Contributor",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice_plants_in_T%E1%BA%A3_Van.jpg",
+    "category": "agriculture",
+    "scene": "scene-05"
+  },
+  "rice-harvest": {
+    "id": "rice-harvest",
+    "src": "/images/rice_harvest.jpg",
+    "alt": "Nông dân Việt Nam thu hoạch lúa mùa bội thu",
+    "caption": "Thu hoạch lúa: Công sức của nông dân kết hợp cùng tiến bộ sinh học nông nghiệp (giống lúa năng suất cao, đề án 1 triệu ha lúa chất lượng cao QĐ 1490).",
+    "author": "Wikimedia Commons Contributor",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Man_Harvesting_Rice_-_Khang_Ninh_Commune_-_Ba_Be_-_Vietnam_-_01_(48107680932).jpg",
+    "category": "agriculture",
+    "scene": "scene-05"
+  },
+  "port-shipping": {
+    "id": "port-shipping",
+    "src": "/images/port_shipping.jpg",
+    "alt": "Tàu container cập cảng quốc tế Hải Phòng xuất khẩu gạo và hàng hóa Việt Nam",
+    "caption": "Cảng container quốc tế Hải Phòng: Mắt xích logistics và thương mại toàn cầu, đưa hạt gạo Việt Nam chinh phục thị trường thế giới.",
+    "author": "Wikimedia Commons Contributor",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Container_Ship_at_the_Hai_Phong_International_Container_Terminal_01.jpg",
+    "category": "logistics-export",
+    "scene": "scene-05"
+  },
+  "alliance-politics": {
+    "id": "alliance-politics",
+    "src": "/images/alliance_politics_slide.jpg",
+    "alt": "Tư liệu liên minh chính trị: Bảo vệ độc lập dân tộc và định hướng XHCN",
+    "caption": "Liên minh chính trị: Mục tiêu bảo vệ vững chắc chế độ chính trị, giữ vững độc lập dân tộc và định hướng đi lên CNXH dưới sự lãnh đạo của Đảng.",
+    "author": "Bộ môn Lý luận chính trị, Đại học FPT",
+    "source": "Bài giảng PPTX MLN131 Tiết 20 Slide 14",
+    "license": "Giáo trình đào tạo nội bộ / Trích dẫn học thuật",
+    "sourceUrl": "references/course/MLN131_Tiet_20.pptx",
+    "category": "alliance",
+    "scene": "scene-06"
+  },
+  "alliance-culture": {
+    "id": "alliance-culture",
+    "src": "/images/alliance_culture_slide.jpg",
+    "alt": "Tư liệu liên minh văn hóa - xã hội: Khối Đại đoàn kết toàn dân tộc",
+    "caption": "Liên minh văn hóa - xã hội: Xây dựng nền văn hóa và con người Việt Nam phát triển toàn diện hướng tới chân - thiện - mỹ, cốt lõi của khối đại đoàn kết.",
+    "author": "Bộ môn Lý luận chính trị, Đại học FPT",
+    "source": "Bài giảng PPTX MLN131 Tiết 20 Slide 16",
+    "license": "Giáo trình đào tạo nội bộ / Trích dẫn học thuật",
+    "sourceUrl": "references/course/MLN131_Tiet_20.pptx",
+    "category": "alliance",
+    "scene": "scene-06"
+  }
+};
+
+export const getImageById = (id: string): DocumentaryImage | undefined => DOCUMENTARY_IMAGES[id];
+
+export const getImagesByScene = (scene: DocumentaryImage['scene']): DocumentaryImage[] =>
+  Object.values(DOCUMENTARY_IMAGES).filter((img) => img.scene === scene);

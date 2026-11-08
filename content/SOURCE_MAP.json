@@ -1,0 +1,455 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "VIỆT NAM ĐA TẦNG",
+  "course": "MLN131 - Chủ nghĩa xã hội khoa học",
+  "topic": "Chủ đề 07, Chương V: Cơ cấu xã hội – giai cấp và liên minh giai cấp, tầng lớp trong thời kỳ quá độ lên chủ nghĩa xã hội",
+  "version": "1.0.0",
+  "auditedDate": "2026-11-07",
+  "authoritativeSourceLedger": "docs/SOURCE_LEDGER.md",
+  "scenes": [
+    {
+      "sceneId": "scene-01",
+      "title": "Bức tranh Xã hội Việt Nam",
+      "kicker": "MLN131 / CHỦ ĐỀ 07 / CHƯƠNG V",
+      "claims": [
+        {
+          "claimId": "s1-objective-structure",
+          "text": "Xã hội Việt Nam được cấu thành bởi một hệ thống cơ cấu xã hội – giai cấp khách quan.",
+          "sourceIds": ["C-18-05", "C-20-03"]
+        },
+        {
+          "claimId": "s1-economic-basis",
+          "text": "Cơ cấu xã hội – giai cấp vận động theo các quy luật nội tại gắn liền với sự biến đổi của nền kinh tế thị trường định hướng XHCN.",
+          "sourceIds": ["C-18-11", "C-20-03"]
+        },
+        {
+          "claimId": "s1-alliance-leadership",
+          "text": "Sự nghiệp xây dựng CNXH đòi hỏi sức mạnh cộng hưởng bền chặt của các giai cấp, tầng lớp nhân dân lao động dưới sự lãnh đạo của Đảng Cộng sản.",
+          "sourceIds": ["C-19-05", "C-19-08"]
+        }
+      ]
+    },
+    {
+      "sceneId": "scene-02",
+      "title": "Giải mã Tọa độ Xã hội: Cơ cấu Xã hội – Giai cấp là gì?",
+      "sections": [
+        {
+          "sectionId": "s2-social-structure-def",
+          "term": "Cơ cấu xã hội (Social Structure)",
+          "definition": "Là những cộng đồng người cùng toàn bộ những mối quan hệ xã hội của các cộng đồng ấy tạo nên.",
+          "components": ["Dân cư", "Nghề nghiệp", "Dân tộc", "Tôn giáo", "Giai cấp"],
+          "sourceIds": ["C-18-03", "C-18-04"]
+        },
+        {
+          "sectionId": "s2-class-structure-def",
+          "term": "Cơ cấu xã hội – giai cấp (Social-Class Structure)",
+          "definition": "Là hệ thống các giai cấp, tầng lớp xã hội tồn tại khách quan trong một chế độ xã hội nhất định, thông qua những mối quan hệ về sở hữu TLSX, về tổ chức quản lý quá trình sản xuất, về địa vị chính trị - xã hội… giữa các giai cấp và tầng lớp đó.",
+          "sourceIds": ["C-18-05", "C-18-06"]
+        },
+        {
+          "sectionId": "s2-three-relations",
+          "title": "Ba mối quan hệ cơ bản cấu thành CCXH-GC",
+          "relations": [
+            {
+              "key": "ownership",
+              "label": "Quan hệ về sở hữu tư liệu sản xuất",
+              "detail": "Xác định tập đoàn người nào nắm giữ tư liệu sản xuất chủ yếu. Tại Việt Nam, tồn tại nhiều hình thức sở hữu. Đất đai thuộc sở hữu toàn dân do Nhà nước đại diện quản lý; nông dân có quyền sử dụng đất hợp pháp.",
+              "sourceIds": ["C-18-05", "C-LAND-LAW"]
+            },
+            {
+              "key": "management",
+              "label": "Quan hệ về tổ chức, quản lý quá trình sản xuất",
+              "detail": "Phân công lao động xã hội, quyền hạn điều hành quy trình sản xuất và chuyển giao công nghệ giữa công nhân, trí thức, doanh nhân và nông dân.",
+              "sourceIds": ["C-18-05"]
+            },
+            {
+              "key": "status_distribution",
+              "label": "Quan hệ về địa vị chính trị – xã hội và phân phối của cải",
+              "detail": "GCCN giữ vai trò lãnh đạo qua ĐCSVN; phân phối chủ yếu theo lao động và hiệu quả kinh tế, kết hợp an sinh xã hội.",
+              "sourceIds": ["C-18-05", "C-20-05", "C-20-17"]
+            }
+          ]
+        },
+        {
+          "sectionId": "s2-primary-position",
+          "title": "Vị trí quan trọng hàng đầu của Cơ cấu Xã hội – Giai cấp",
+          "reasons": [
+            {
+              "reasonId": "r1-politics-economy",
+              "text": "Liên quan trực tiếp đến các đảng phái chính trị, nhà nước, quyền sở hữu TLSX, quản lý tổ chức lao động và phân phối của cải.",
+              "sourceIds": ["C-18-08"]
+            },
+            {
+              "reasonId": "r2-determining-direction",
+              "text": "Sự biến đổi của CCXH-GC tất yếu chi phối và quyết định chiều hướng biến đổi của các loại hình cơ cấu xã hội khác và toàn bộ cơ cấu xã hội.",
+              "sourceIds": ["C-18-09"]
+            },
+            {
+              "reasonId": "r3-policy-basis",
+              "text": "Là căn cứ thực tiễn cơ bản để Đảng và Nhà nước hoạch định chính sách phát triển kinh tế, văn hóa, xã hội trong từng thời kỳ.",
+              "sourceIds": ["C-18-10"]
+            },
+            {
+              "reasonId": "r4-reciprocal-impact",
+              "text": "Các cơ cấu xã hội khác (dân tộc, tôn giáo, dân cư) có vai trò tác động biện chứng trở lại đối với CCXH-GC.",
+              "sourceIds": ["C-18-10"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "scene-03",
+      "title": "Dòng chảy Biến chuyển: Ba Quy luật Vận động trong Thời kỳ Quá độ",
+      "laws": [
+        {
+          "lawNumber": 1,
+          "name": "Quy luật 1: Biến đổi gắn liền và bị quy định bởi cơ cấu kinh tế",
+          "thesis": "Cơ cấu kinh tế là cơ sở vật chất quyết định cơ cấu xã hội – giai cấp. Khi cơ cấu kinh tế chuyển dịch từ nông nghiệp truyền thống sang công nghiệp, dịch vụ và kinh tế số, cơ cấu giai cấp chuyển dịch tương ứng.",
+          "sourceIds": ["C-18-11"]
+        },
+        {
+          "lawNumber": 2,
+          "name": "Quy luật 2: Biến đổi phức tạp, đa dạng, làm xuất hiện các tầng lớp xã hội mới",
+          "thesis": "Kinh tế thị trường định hướng XHCN với nhiều thành phần kinh tế làm nảy sinh và lớn mạnh các tầng lớp xã hội mới, nổi bật là đội ngũ doanh nhân, lao động kỹ thuật cao trong khu vực tư nhân và liên doanh quốc tế.",
+          "sourceIds": ["C-18-12"]
+        },
+        {
+          "lawNumber": 3,
+          "name": "Quy luật 3: Biến đổi trong quan hệ vừa đấu tranh vừa liên minh, từng bước xóa bỏ bất bình đẳng xã hội dẫn đến sự xích lại gần nhau",
+          "thesis": "Liên minh trên cơ sở lợi ích căn bản thống nhất; đấu tranh giữa định hướng XHCN và tự phát TBCN, bài trừ các hành vi vi phạm pháp luật. Xích lại gần nhau về quan hệ TLSX, tính chất lao động và hưởng thụ văn hóa/an sinh xã hội.",
+          "academicCaveat": "Xóa bỏ bất bình đẳng xã hội và xích lại gần nhau là xu hướng lý luận và mục tiêu phấn đấu lâu dài, không khẳng định bất bình đẳng đã chấm dứt hoàn toàn trong thực tiễn hiện tại.",
+          "sourceIds": ["C-18-13", "C-19-03", "C-20-15"]
+        }
+      ]
+    },
+    {
+      "sceneId": "scene-04",
+      "title": "Lát cắt Đương đại: Hồ sơ 6 Lực lượng Xã hội Tiêu biểu",
+      "sourceOverview": ["C-20-04", "C-VK-XIII"],
+      "profiles": [
+        {
+          "id": "cong-nhan",
+          "label": "Giai cấp công nhân Việt Nam",
+          "category": "Giai cấp kinh tế – xã hội cơ bản",
+          "positionSourceIds": ["C-20-05"],
+          "roleSourceIds": ["C-20-05"],
+          "contributionSourceIds": ["C-20-05", "C-VK-XIII"],
+          "exampleSourceIds": ["C-20-05"]
+        },
+        {
+          "id": "nong-dan",
+          "label": "Giai cấp nông dân Việt Nam",
+          "category": "Giai cấp kinh tế – xã hội cơ bản",
+          "positionSourceIds": ["C-20-06"],
+          "roleSourceIds": ["C-20-06"],
+          "contributionSourceIds": ["C-20-06", "C-VK-XIII"],
+          "exampleSourceIds": ["C-LAND-LAW", "C-20-06"]
+        },
+        {
+          "id": "tri-thuc",
+          "label": "Đội ngũ trí thức Việt Nam",
+          "category": "Tầng lớp xã hội sáng tạo",
+          "positionSourceIds": ["C-20-07"],
+          "roleSourceIds": ["C-20-07"],
+          "contributionSourceIds": ["C-20-07", "C-VK-XIII"],
+          "exampleSourceIds": ["C-20-07"]
+        },
+        {
+          "id": "doanh-nhan",
+          "label": "Đội ngũ doanh nhân Việt Nam",
+          "category": "Tầng lớp xã hội tổ chức kinh doanh",
+          "positionSourceIds": ["C-20-08"],
+          "roleSourceIds": ["C-20-08"],
+          "contributionSourceIds": ["C-20-08", "C-VK-XIII"],
+          "exampleSourceIds": ["C-18-12", "C-20-08"]
+        },
+        {
+          "id": "phu-nu",
+          "label": "Phụ nữ Việt Nam",
+          "category": "Nhóm nhân khẩu học xã hội (theo Giới tính)",
+          "positionSourceIds": ["C-20-09"],
+          "roleSourceIds": ["C-20-09"],
+          "contributionSourceIds": ["C-20-09", "C-VK-XIII"],
+          "exampleSourceIds": ["C-20-09"],
+          "academicNoteSourceIds": ["C-20-09"]
+        },
+        {
+          "id": "thanh-nien",
+          "label": "Đội ngũ thanh niên Việt Nam",
+          "category": "Nhóm nhân khẩu học xã hội (theo Độ tuổi: 16–30)",
+          "positionSourceIds": ["C-20-10"],
+          "roleSourceIds": ["C-20-10"],
+          "contributionSourceIds": ["C-20-10", "C-VK-XIII"],
+          "exampleSourceIds": ["C-LTN-2020", "C-20-10"],
+          "academicNoteSourceIds": ["C-LTN-2020", "C-20-10"]
+        }
+      ]
+    },
+    {
+      "sceneId": "scene-05",
+      "title": "Hạt gạo Liên minh: Mô hình Sư phạm Chuỗi Giá trị Nông sản Việt",
+      "modelClassification": "Mô hình sư phạm trực quan (Pedagogical Illustration)",
+      "theoreticalBasis": {
+        "concept": "Liên minh giai cấp trên lĩnh vực kinh tế là cơ sở vật chất – kỹ thuật của liên minh",
+        "sourceIds": ["C-19-06", "C-19-07", "C-19-09", "C-20-12", "C-20-13"]
+      },
+      "policyContext": {
+        "legalBasis": "Quyết định số 1490/QĐ-TTg ngày 27/11/2023 của Thủ tướng Chính phủ",
+        "program": "Đề án Phát triển bền vững 1 triệu héc-ta chuyên canh lúa chất lượng cao và phát thải thấp gắn với tăng trưởng xanh vùng ĐBSCL",
+        "targetHorizon": "Mục tiêu chiến lược phấn đấu đến năm 2030 (không phải số liệu đã hoàn thành)",
+        "sourceIds": ["C-RICE-ILLUS"]
+      },
+      "valueChainNodes": [
+        {
+          "nodeId": "node-1-tri-thuc",
+          "forceId": "tri-thuc",
+          "roleInChain": "Nghiên cứu & Chuyển giao: Lai tạo giống lúa năng suất cao (ST24, ST25), quy trình tưới khô xen kẽ AWD giảm phát thải",
+          "sourceIds": ["C-20-07", "C-RICE-ILLUS"]
+        },
+        {
+          "nodeId": "node-2-nong-dan",
+          "forceId": "nong-dan",
+          "roleInChain": "Tổ chức Canh tác: Canh tác trên đất thuộc sở hữu toàn dân theo quyền sử dụng đất hợp pháp, chuẩn hóa VietGAP trong HTX kiểu mới",
+          "sourceIds": ["C-20-06", "C-LAND-LAW", "C-RICE-ILLUS"]
+        },
+        {
+          "nodeId": "node-3-cong-nhan",
+          "forceId": "cong-nhan",
+          "roleInChain": "Cơ giới hóa, Chế biến sâu & Logistics: Vận hành máy gặt, lò sấy, dây chuyền tách vỏ đánh bóng và vận chuyển cảng biển container",
+          "sourceIds": ["C-20-05", "C-RICE-ILLUS"]
+        },
+        {
+          "nodeId": "node-4-doanh-nhan",
+          "forceId": "doanh-nhan",
+          "roleInChain": "Đầu tư Vốn, Xây dựng Thương hiệu & Xuất khẩu: Bao tiêu sản phẩm, đầu tư silô bảo quản, xúc tiến xuất khẩu chính ngạch sang EU/Mỹ/Nhật",
+          "sourceIds": ["C-20-08", "C-RICE-ILLUS"]
+        },
+        {
+          "nodeId": "node-cross-cutting",
+          "forceId": "phu-nu-thanh-nien",
+          "roleInChain": "Lực lượng Giao thoa: Nữ kỹ sư phân tích gen, nữ đóng gói, thanh niên lái drone sạ lúa, lập trình cảm biến IoT",
+          "sourceIds": ["C-20-09", "C-20-10", "C-RICE-ILLUS"]
+        }
+      ]
+    },
+    {
+      "sceneId": "scene-06",
+      "title": "Đúc kết Nhận thức, Thử thách Tương tác & Tra cứu Nguồn",
+      "keyTakeaways": [
+        {
+          "id": "takeaway-1",
+          "title": "Cơ cấu Xã hội – Giai cấp là hạt nhân chi phối",
+          "sourceIds": ["C-18-05", "C-18-08", "C-18-09"]
+        },
+        {
+          "id": "takeaway-2",
+          "title": "Biến đổi gắn liền với kinh tế thị trường định hướng XHCN",
+          "sourceIds": ["C-18-11", "C-18-12", "C-18-13"]
+        },
+        {
+          "id": "takeaway-3",
+          "title": "Liên minh giai tầng là nền tảng và động lực quyết định thắng lợi",
+          "sourceIds": ["C-19-08", "C-19-09", "C-20-12"]
+        }
+      ],
+      "quizMapping": [
+        {
+          "quizId": "mln131-q1",
+          "primarySourceId": "C-18-05",
+          "slideRef": "MLN131_Tiet_18.pptx, Slide 5"
+        },
+        {
+          "quizId": "mln131-q2",
+          "primarySourceId": "C-18-11",
+          "slideRef": "MLN131_Tiet_18.pptx, Slide 11"
+        },
+        {
+          "quizId": "mln131-q3",
+          "primarySourceId": "C-19-08",
+          "secondarySourceId": "C-20-05",
+          "slideRef": "MLN131_Tiet_19.pptx, Slide 8; Tiết 20, Slide 5"
+        },
+        {
+          "quizId": "mln131-q4",
+          "primarySourceId": "C-20-09",
+          "secondarySourceIds": ["C-20-10", "C-LTN-2020"],
+          "slideRef": "MLN131_Tiet_20.pptx, Slide 9, 10; Luật Thanh niên 2020"
+        },
+        {
+          "quizId": "mln131-q5",
+          "primarySourceId": "C-RICE-ILLUS",
+          "secondarySourceIds": ["C-19-09", "C-20-12"],
+          "slideRef": "MLN131_Tiet_19.pptx, Slide 9; Tiết 20, Slide 12; QĐ 1490/QĐ-TTg"
+        }
+      ]
+    }
+  ],
+  "sourceCatalog": {
+    "C-18-03": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_18.pptx, Slide 3",
+      "shortSummary": "Khái niệm Cơ cấu xã hội: những cộng đồng người cùng toàn bộ những mối quan hệ xã hội của các cộng đồng ấy tạo nên."
+    },
+    "C-18-04": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_18.pptx, Slide 4 & sơ đồ Slide 3",
+      "shortSummary": "Cơ cấu xã hội gồm 5 phân hệ: Dân tộc, Dân cư, Nghề nghiệp, Tôn giáo, Giai cấp."
+    },
+    "C-18-05": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_18.pptx, Slide 5",
+      "shortSummary": "Khái niệm Cơ cấu xã hội – giai cấp và 3 mối quan hệ: sở hữu TLSX, tổ chức quản lý sản xuất, địa vị chính trị – xã hội."
+    },
+    "C-18-06": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_18.pptx, Slide 6",
+      "shortSummary": "Các bộ phận cấu thành CCXH-GC: Giai cấp, Tầng lớp, Nhóm xã hội."
+    },
+    "C-18-08": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_18.pptx, Slide 8",
+      "shortSummary": "Vị trí hàng đầu của CCXH-GC: liên quan đến các đảng phái chính trị, nhà nước, quyền sở hữu TLSX, quản lý tổ chức lao động và phân phối."
+    },
+    "C-18-09": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_18.pptx, Slide 9",
+      "shortSummary": "CCXH-GC chi phối và quyết định chiều hướng biến đổi của các loại hình cơ cấu xã hội khác và toàn bộ cơ cấu xã hội."
+    },
+    "C-18-10": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_18.pptx, Slide 10",
+      "shortSummary": "CCXH-GC là căn cứ hoạch định chính sách; các cơ cấu xã hội khác có vai trò tác động biện chứng trở lại."
+    },
+    "C-18-11": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_18.pptx, Slide 11",
+      "shortSummary": "Quy luật 1: CCXH-GC biến đổi gắn liền và bị quy định bởi cơ cấu kinh tế của thời kỳ quá độ."
+    },
+    "C-18-12": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_18.pptx, Slide 12",
+      "shortSummary": "Quy luật 2: CCXH-GC biến đổi phức tạp, đa dạng, làm xuất hiện các tầng lớp xã hội mới (như doanh nhân)."
+    },
+    "C-18-13": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_18.pptx, Slide 13",
+      "shortSummary": "Quy luật 3: CCXH-GC biến đổi trong quan hệ vừa đấu tranh vừa liên minh, từng bước xóa bỏ bất bình đẳng xã hội dẫn đến sự xích lại gần nhau (xu thế lịch sử)."
+    },
+    "C-19-03": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_19.pptx, Slide 3",
+      "shortSummary": "Khái niệm Liên minh giai cấp, tầng lớp: sự liên kết, hợp tác, hỗ trợ nhau nhằm thực hiện nhu cầu và lợi ích chung."
+    },
+    "C-19-05": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_19.pptx, Slide 5",
+      "shortSummary": "Tính tất yếu chính trị: Khối liên minh do ĐCSVN lãnh đạo giữ vững định hướng XHCN và tạo nền tảng xã hội của chế độ."
+    },
+    "C-19-06": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_19.pptx, Slide 6",
+      "shortSummary": "Tính tất yếu kinh tế: Các lĩnh vực kinh tế phải gắn chặt với nhau, đòi hỏi các chủ thể phải liên minh."
+    },
+    "C-19-07": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_19.pptx, Slide 7",
+      "shortSummary": "Thỏa mãn nhu cầu, lợi ích kinh tế là động lực trực tiếp duy trì khối liên minh và xây dựng cơ sở vật chất cho CNXH."
+    },
+    "C-19-08": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_19.pptx, Slide 8",
+      "shortSummary": "Liên minh Công - Nông - Trí thức là điều kiện đảm bảo vai trò lãnh đạo của GCCN và quyết định thắng lợi của sự nghiệp xây dựng xã hội mới."
+    },
+    "C-19-09": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_19.pptx, Slide 9",
+      "shortSummary": "Sự hình thành khối liên minh xuất phát từ chính nhu cầu và lợi ích kinh tế chung giữa công nghiệp, nông nghiệp, dịch vụ và KH-CN."
+    },
+    "C-20-03": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 3",
+      "shortSummary": "Đặc điểm CCXH-GC ở Việt Nam: vừa đảm bảo tính quy luật phổ biến, vừa mang tính đặc thù của thời kỳ quá độ."
+    },
+    "C-20-04": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 4",
+      "shortSummary": "Hệ thống 6 lực lượng xã hội được Chương 5 chọn giới thiệu: Công nhân, Nông dân, Trí thức, Doanh nhân, Phụ nữ, Thanh niên."
+    },
+    "C-20-05": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 5",
+      "shortSummary": "Giai cấp công nhân: Lãnh đạo qua ĐCSVN, đại diện PTSX tiên tiến, tiên phong xây dựng CNXH, nòng cốt liên minh."
+    },
+    "C-20-06": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 6",
+      "shortSummary": "Giai cấp nông dân: Vị trí chiến lược trong CNH-HĐH nông nghiệp/nông thôn, chủ thể xây dựng nông thôn mới, bảo vệ môi trường sinh thái."
+    },
+    "C-20-07": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 7",
+      "shortSummary": "Đội ngũ trí thức: Lực lượng lao động sáng tạo đặc biệt quan trọng trong CNH-HĐH, hội nhập quốc tế và xây dựng kinh tế tri thức."
+    },
+    "C-20-08": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 8",
+      "shortSummary": "Đội ngũ doanh nhân: Tầng lớp xã hội đặc biệt phát triển nhanh trong kinh tế thị trường, tổ chức nguồn lực, kết nối thị trường."
+    },
+    "C-20-09": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 9",
+      "shortSummary": "Phụ nữ Việt Nam: Lực lượng to lớn và đông đảo, giữ vai trò quan trọng trong sản xuất, xã hội và gia đình; nhóm giao thoa theo giới."
+    },
+    "C-20-10": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 10",
+      "shortSummary": "Đội ngũ thanh niên: Rường cột nước nhà, chủ nhân tương lai, lực lượng xung kích; rèn luyện Tâm trong - Trí sáng - Hoài bão lớn; nhóm giao thoa độ tuổi 16-30."
+    },
+    "C-20-11": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 11",
+      "shortSummary": "Ba nội dung liên minh cơ bản: Kinh tế, Chính trị, Văn hóa – xã hội."
+    },
+    "C-20-12": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 12",
+      "shortSummary": "Liên minh kinh tế là cơ sở vật chất – kỹ thuật của liên minh, nhằm thỏa mãn các nhu cầu và lợi ích kinh tế."
+    },
+    "C-20-13": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 13",
+      "shortSummary": "4 biện pháp liên minh kinh tế: tiềm lực & nhu cầu, cơ cấu kinh tế hợp lý, giao lưu hợp tác, chuyển giao KHKT."
+    },
+    "C-20-15": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 15",
+      "shortSummary": "Liên minh chính trị: Đảm bảo ĐCS lãnh đạo, phát huy dân chủ XHCN, xây dựng Nhà nước pháp quyền, phòng chống diễn biến hòa bình."
+    },
+    "C-20-17": {
+      "type": "[BAI_GIANG]",
+      "citation": "MLN131_Tiet_20.pptx, Slide 17",
+      "shortSummary": "Liên minh văn hóa – xã hội: Gắn tăng trưởng kinh tế với công bằng xã hội, khắc phục phân hóa giàu nghèo, chăm lo an sinh xã hội."
+    },
+    "C-LAND-LAW": {
+      "type": "[VAN_KIEN]",
+      "citation": "Hiến pháp 2013 (Điều 53, 54); Luật Đất đai 2013 / 2024",
+      "shortSummary": "Đất đai thuộc sở hữu toàn dân do Nhà nước đại diện quản lý; nông dân có quyền sử dụng đất hợp pháp, không có quyền sở hữu tư nhân ruộng đất."
+    },
+    "C-LTN-2020": {
+      "type": "[VAN_KIEN]",
+      "citation": "Luật Thanh niên số 57/2020/QH14, Điều 1",
+      "shortSummary": "Thanh niên là công dân Việt Nam từ đủ 16 tuổi đến 30 tuổi; nhóm nhân khẩu học xã hội theo độ tuổi."
+    },
+    "C-RICE-ILLUS": {
+      "type": "[MINH_HOA] / [DU_LIEU]",
+      "citation": "Quyết định số 1490/QĐ-TTg ngày 27/11/2023 của Thủ tướng Chính phủ",
+      "shortSummary": "Mô hình sư phạm chuỗi giá trị lúa gạo 4 mắt xích (Trí thức - Nông dân - Công nhân - Doanh nhân); Đề án 1 triệu ha hướng tới mục tiêu phấn đấu 2030."
+    },
+    "C-VK-XIII": {
+      "type": "[VAN_KIEN]",
+      "citation": "Văn kiện Đại hội XIII của Đảng (Tập I, tr. 166–170)",
+      "shortSummary": "Đường lối phát triển giai cấp công nhân, nông dân, trí thức, doanh nhân, phụ nữ và thanh niên trong thời kỳ mới."
+    }
+  }
+}

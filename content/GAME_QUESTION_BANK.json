@@ -1,0 +1,223 @@
+{
+  "title": "Đấu Trường Tri Thức — MLN131 Live Challenge",
+  "description": "Ngân hàng 12 câu hỏi đấu trường trực tiếp môn Chủ nghĩa xã hội khoa học — Chủ đề 7, Chương 5",
+  "totalRounds": 3,
+  "totalQuestions": 12,
+  "rounds": [
+    {
+      "roundNumber": 1,
+      "title": "Vòng 1: Phản Xạ Tri Thức",
+      "description": "Khái niệm cơ cấu xã hội – giai cấp, quan hệ cốt lõi và 3 quy luật biến đổi trong thời kỳ quá độ (5 câu hỏi)",
+      "questionCount": 5,
+      "scoreMultiplier": 1.0
+    },
+    {
+      "roundNumber": 2,
+      "title": "Vòng 2: Ai Giữ Vai Trò Gì?",
+      "description": "Định vị chính xác vị trí, vai trò và đóng góp lịch sử của 6 lực lượng xã hội (4 câu hỏi)",
+      "questionCount": 4,
+      "scoreMultiplier": 1.0
+    },
+    {
+      "roundNumber": 3,
+      "title": "Vòng 3: Giải Mã Xã Hội (Điểm x1.5)",
+      "description": "Vận dụng thực tiễn, phân tích liên minh chuỗi giá trị và tính chất giao thoa nhân khẩu học (3 câu hỏi)",
+      "questionCount": 3,
+      "scoreMultiplier": 1.5
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q-01",
+      "round": 1,
+      "prompt": "Trong hệ thống các loại hình cơ cấu xã hội, yếu tố nào giữ vị trí TRUNG TÂM và chi phối trực tiếp các loại hình cơ cấu xã hội khác?",
+      "options": [
+        "Cơ cấu xã hội – dân số và nhân khẩu học",
+        "Cơ cấu xã hội – giai cấp",
+        "Cơ cấu xã hội – dân tộc và tôn giáo",
+        "Cơ cấu xã hội – nghề nghiệp và địa bàn cư trú"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-18-03",
+      "sourceLabel": "MLN131_Tiet_18.pptx, Slide 3",
+      "explanation": "Cơ cấu xã hội – giai cấp giữ vị trí trung tâm vì nó liên quan trực tiếp đến quan hệ sản xuất và quyền sở hữu tư liệu sản xuất chủ yếu của xã hội, từ đó chi phối các quan hệ chính trị, tư tưởng và xã hội khác."
+    },
+    {
+      "id": "Q-02",
+      "round": 1,
+      "prompt": "Trong 3 mặt của quan hệ sản xuất cấu thành cơ cấu giai cấp, quan hệ nào giữ vai trò QUYẾT ĐỊNH trực tiếp đến địa vị chính trị – xã hội và tính chất phân phối?",
+      "options": [
+        "Quan hệ phân phối sản phẩm tiêu dùng cá nhân",
+        "Quan hệ tổ chức quản lý và phân công lao động",
+        "Quan hệ sở hữu đối với tư liệu sản xuất",
+        "Quan hệ giao tiếp và dư luận xã hội"
+      ],
+      "correctIndex": 2,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-18-05",
+      "sourceLabel": "MLN131_Tiet_18.pptx, Slide 5",
+      "explanation": "Quan hệ sở hữu đối với tư liệu sản xuất là nền tảng cốt lõi quyết định ai nắm giữ phương tiện sinh tồn và tích lũy thặng dư, từ đó quy định quyền tổ chức quản lý và quy mô phân phối của mỗi giai tầng."
+    },
+    {
+      "id": "Q-03",
+      "round": 1,
+      "prompt": "Theo quy luật khách quan của thời kỳ quá độ, cơ cấu xã hội – giai cấp biến đổi gắn liền và bị quy định trực tiếp bởi yếu tố nào?",
+      "options": [
+        "Cơ cấu kinh tế và phương thức sản xuất",
+        "Sự biến động dân số và di cư tự do",
+        "Tốc độ phổ cập mạng Internet và công nghệ số",
+        "Ý muốn chủ quan của hệ thống hành chính"
+      ],
+      "correctIndex": 0,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-18-08",
+      "sourceLabel": "MLN131_Tiet_18.pptx, Slide 8",
+      "explanation": "Cơ cấu kinh tế quy định cơ cấu xã hội – giai cấp. Sự chuyển dịch cơ cấu kinh tế (nhiều thành phần, công nghiệp hóa – hiện đại hóa) tất yếu kéo theo sự biến đổi về số lượng, chất lượng và địa vị của các giai tầng."
+    },
+    {
+      "id": "Q-04",
+      "round": 1,
+      "prompt": "Vì sao cơ cấu xã hội – giai cấp ở Việt Nam trong thời kỳ quá độ lên CNXH lại mang tính chất ĐA DẠNG và PHỨC TẠP?",
+      "options": [
+        "Do chịu ảnh hưởng duy nhất từ nguồn vốn viện trợ quốc tế",
+        "Do tồn tại nền kinh tế nhiều thành phần với nhiều hình thức sở hữu khác nhau",
+        "Do các giai cấp cũ chưa hoàn toàn bị tiêu diệt bằng biện pháp hành chính",
+        "Do sự phát triển thiếu quy hoạch của các đô thị lớn"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-19-04",
+      "sourceLabel": "MLN131_Tiet_19.pptx, Slide 4",
+      "explanation": "Nền kinh tế nhiều thành phần (kinh tế nhà nước, kinh tế tập thể, kinh tế tư nhân, có vốn đầu tư nước ngoài) với các hình thức sở hữu đan xen là cơ sở khách quan tạo nên cơ cấu giai cấp đa dạng, phức tạp."
+    },
+    {
+      "id": "Q-05",
+      "round": 1,
+      "prompt": "Trong sự biến đổi của cơ cấu xã hội – giai cấp ở Việt Nam, xu hướng khách quan nào diễn ra song song với sự đa dạng hóa?",
+      "options": [
+        "Xu hướng đối kháng giai cấp ngày càng gay gắt, triệt tiêu lẫn nhau",
+        "Xu hướng xích lại gần nhau giữa các giai cấp, tầng lớp về quyền sở hữu, quản lý và thụ hưởng",
+        "Xu hướng đồng nhất hóa tuyệt đối xóa bỏ mọi ranh giới nghề nghiệp",
+        "Xu hướng tư nhân hóa toàn bộ các tập đoàn kinh tế nhà nước"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-19-05",
+      "sourceLabel": "MLN131_Tiet_19.pptx, Slide 5",
+      "explanation": "Xu hướng xích lại gần nhau giữa các giai cấp, tầng lớp là quy luật khách quan hướng tới mục tiêu xây dựng xã hội công bằng, dân chủ, văn minh, dựa trên cơ sở lợi ích kinh tế cơ bản thống nhất dưới sự lãnh đạo của Đảng."
+    },
+    {
+      "id": "Q-06",
+      "round": 2,
+      "prompt": "Lực lượng nào giữ vai trò LÃNH ĐẠO cách mạng thông qua Đảng Cộng sản Việt Nam, là lực lượng nòng cốt tiên phong trong sự nghiệp công nghiệp hóa, hiện đại hóa?",
+      "options": [
+        "Đội ngũ Trí thức tinh hoa",
+        "Giai cấp Công nhân",
+        "Đội ngũ Doanh nhân tiên phong",
+        "Giai cấp Nông dân đông đảo"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-19-07",
+      "sourceLabel": "MLN131_Tiet_19.pptx, Slide 7",
+      "explanation": "Giai cấp Công nhân là giai cấp lãnh đạo cách mạng thông qua đội tiền phong là Đảng Cộng sản Việt Nam; đại diện cho phương thức sản xuất tiên tiến, giữ vai trò tiên phong trong CNH-HĐH và chuyển đổi số."
+    },
+    {
+      "id": "Q-07",
+      "round": 2,
+      "prompt": "Trong chiến lược phát triển nông nghiệp sinh thái, nông thôn hiện đại, văn minh, giai cấp Nông dân được Văn kiện Đại hội XIII xác định giữ vị trí nào?",
+      "options": [
+        "Lực lượng phụ thuộc nhận trợ cấp xã hội",
+        "Chủ thể, trung tâm của quá trình phát triển nông nghiệp, kinh tế nông thôn và xây dựng nông thôn mới",
+        "Tầng lớp làm thuê thuần túy cho các công ty xuyên quốc gia",
+        "Lực lượng đang dần bị loại bỏ hoàn toàn khỏi nền kinh tế"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-19-08",
+      "sourceLabel": "MLN131_Tiet_19.pptx, Slide 8",
+      "explanation": "Đại hội XIII của Đảng khẳng định: Giai cấp Nông dân là chủ thể, là trung tâm của quá trình phát triển nông nghiệp, kinh tế nông thôn và xây dựng nông thôn mới, đóng vai trò chiến lược trong bảo đảm an ninh lương thực quốc gia."
+    },
+    {
+      "id": "Q-08",
+      "round": 2,
+      "prompt": "Lực lượng lao động sáng tạo ĐẶC BIỆT QUAN TRỌNG trong tiến trình đẩy mạnh CNH-HĐH đất nước, hội nhập quốc tế và phát triển kinh tế tri thức là ai?",
+      "options": [
+        "Đội ngũ Trí thức",
+        "Tầng lớp tiểu thương thị trường tự do",
+        "Đội ngũ cán bộ hành chính thuần túy",
+        "Khối người lao động giản đơn thủ công"
+      ],
+      "correctIndex": 0,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-19-09",
+      "sourceLabel": "MLN131_Tiet_19.pptx, Slide 9",
+      "explanation": "Đội ngũ Trí thức là lực lượng lao động trí tuệ sáng tạo đặc biệt quan trọng; nghiên cứu, phát minh, chuyển giao khoa học – công nghệ, đào tạo nhân lực và tư vấn chính sách cho sự phát triển đất nước."
+    },
+    {
+      "id": "Q-09",
+      "round": 2,
+      "prompt": "Lực lượng nào giữ vai trò ĐẶC BIỆT TIÊN PHONG trong phát triển sản xuất kinh doanh, giải quyết việc làm, huy động nguồn lực xã hội và nâng cao năng lực cạnh tranh quốc gia?",
+      "options": [
+        "Khối sản xuất tự cung tự cấp",
+        "Đội ngũ Doanh nhân",
+        "Các tổ chức phi chính phủ nước ngoài",
+        "Bộ phận đầu cơ bất động sản"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-19-10",
+      "sourceLabel": "MLN131_Tiet_19.pptx, Slide 10",
+      "explanation": "Đội ngũ Doanh nhân phát triển mạnh mẽ trong nền kinh tế thị trường định hướng XHCN; là lực lượng tiên phong tổ chức sản xuất, tạo việc làm, kết nối chuỗi cung ứng và nâng tầm thương hiệu Việt Nam trên thị trường quốc tế."
+    },
+    {
+      "id": "Q-10",
+      "round": 3,
+      "prompt": "Vì sao trong phân tích xã hội học Mác – Lênin, Phụ nữ và Thanh niên KHÔNG được xếp thành một giai cấp kinh tế độc lập, mà được định vị là các lực lượng xã hội giao thoa?",
+      "options": [
+        "Vì họ không tham gia vào hoạt động sản xuất của cải vật chất",
+        "Vì họ là các nhóm nhân khẩu học xã hội hiện diện đan xen trong mọi giai tầng kinh tế (công nhân, nông dân, trí thức, doanh nhân)",
+        "Vì họ không có tổ chức chính trị – xã hội đại diện quyền lợi",
+        "Vì vai trò của họ chỉ giới hạn trong đời sống gia đình cá nhân"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-19-11",
+      "sourceLabel": "MLN131_Tiet_19.pptx, Slide 11-12",
+      "explanation": "Giai cấp được định hình bởi quan hệ sở hữu đối với TLSX và địa vị kinh tế. Phụ nữ và Thanh niên là các nhóm nhân khẩu học - xã hội giao thoa (intersectionality) trải rộng trong tất cả các giai tầng, đóng góp vào sức mạnh tổng hợp của khối liên minh."
+    },
+    {
+      "id": "Q-11",
+      "round": 3,
+      "prompt": "Trong Đề án 1 triệu ha lúa chất lượng cao phát thải thấp (QĐ 1490/QĐ-TTg), sự gắn kết nào thể hiện rõ nét nhất liên minh Công nhân – Nông dân – Trí thức – Doanh nhân?",
+      "options": [
+        "Trí thức nghiên cứu giống và quy trình xanh, Nông dân canh tác đạt chuẩn, Công nhân chế biến cơ giới hóa, Doanh nhân bao tiêu xuất khẩu",
+        "Nông dân tự do bán lúa tươi cho thương lái trung gian không cần hợp đồng liên kết",
+        "Doanh nghiệp chỉ xuất khẩu gạo thô mà không đầu tư công nghệ chế biến sâu",
+        "Nhà nước mua toàn bộ sản lượng lúa theo cơ chế bao cấp thời kỳ cũ"
+      ],
+      "correctIndex": 0,
+      "timeLimitSeconds": 20,
+      "sourceId": "D-1490-01",
+      "sourceLabel": "Quyết định 1490/QĐ-TTg & Slide 7 Tiết 20",
+      "explanation": "Chuỗi giá trị lúa gạo hiện đại là biểu hiện sống động của liên minh 4 nhà: Trí thức cung cấp công nghệ xanh, Nông dân canh tác theo chuẩn phát thải thấp, Công nhân vận hành nhà máy cơ giới, Doanh nhân ký hợp đồng bao tiêu và xây dựng thương hiệu quốc tế."
+    },
+    {
+      "id": "Q-12",
+      "round": 3,
+      "prompt": "Trong 3 nội dung của liên minh giai cấp, tầng lớp ở Việt Nam (Kinh tế, Chính trị, Văn hóa – Xã hội), nội dung nào giữ vai trò CƠ SỞ VẬT CHẤT và QUYẾT ĐỊNH tính bền vững lâu dài của khối liên minh?",
+      "options": [
+        "Nội dung Văn hóa – Xã hội",
+        "Nội dung Liên minh Kinh tế",
+        "Nội dung Chính trị – Tư tưởng",
+        "Nội dung Đối ngoại quốc tế"
+      ],
+      "correctIndex": 1,
+      "timeLimitSeconds": 20,
+      "sourceId": "C-20-03",
+      "sourceLabel": "MLN131_Tiet_20.pptx, Slide 3-5",
+      "explanation": "Liên minh kinh tế là nội dung quan trọng nhất, giữ vai trò cơ sở vật chất - kỹ thuật quyết định sự gắn kết lâu bền của khối liên minh, thông qua việc kết hợp hài hòa lợi ích kinh tế giữa các giai cấp, tầng lớp."
+    }
+  ]
+}
