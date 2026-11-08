@@ -21,6 +21,7 @@ import {
   Wifi,
   Globe,
   Laptop,
+  Cloud,
 } from "lucide-react";
 
 interface GameHostViewProps {
@@ -44,7 +45,7 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
     initialState.timeLimitSeconds
   );
   const [detectedLanIp, setDetectedLanIp] = useState<string>("");
-  const [hostType, setHostType] = useState<"WIFI" | "LOCALHOST" | "CUSTOM">("WIFI");
+  const [hostType, setHostType] = useState<"PRODUCTION" | "WIFI" | "LOCALHOST" | "CUSTOM">("PRODUCTION");
   const [customOrigin, setCustomOrigin] = useState<string>("");
 
   // Detect Host LAN IP on mount
@@ -117,7 +118,7 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
 
   const computeJoinUrl = () => {
     if (typeof window === "undefined") {
-      return `http://localhost:3000?joinRoom=${roomCode}#scene-06`;
+      return `https://social-strata-vietnam.vercel.app/?joinRoom=${roomCode}#scene-06`;
     }
 
     const isLocal =
@@ -126,24 +127,28 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
     const port = window.location.port ? `:${window.location.port}` : "";
 
     if (!isLocal) {
-      return `${window.location.origin}?joinRoom=${roomCode}#scene-06`;
+      return `${window.location.origin}/?joinRoom=${roomCode}#scene-06`;
+    }
+
+    if (hostType === "PRODUCTION") {
+      return `https://social-strata-vietnam.vercel.app/?joinRoom=${roomCode}#scene-06`;
+    }
+
+    if (hostType === "WIFI") {
+      const ip = detectedLanIp || "192.168.0.101";
+      return `http://${ip}${port}/?joinRoom=${roomCode}#scene-06`;
+    }
+
+    if (hostType === "LOCALHOST") {
+      return `${window.location.origin}/?joinRoom=${roomCode}#scene-06`;
     }
 
     if (hostType === "CUSTOM" && customOrigin.trim()) {
       const cleanCustom = customOrigin.trim().replace(/\/$/, "");
-      return `${cleanCustom}?joinRoom=${roomCode}#scene-06`;
+      return `${cleanCustom}/?joinRoom=${roomCode}#scene-06`;
     }
 
-    if (hostType === "LOCALHOST") {
-      return `${window.location.origin}?joinRoom=${roomCode}#scene-06`;
-    }
-
-    // Default: use detected LAN IP if available for phones
-    if (detectedLanIp) {
-      return `http://${detectedLanIp}${port}?joinRoom=${roomCode}#scene-06`;
-    }
-
-    return `${window.location.origin}?joinRoom=${roomCode}#scene-06`;
+    return `https://social-strata-vietnam.vercel.app/?joinRoom=${roomCode}#scene-06`;
   };
 
   const joinUrl = computeJoinUrl();
@@ -260,18 +265,32 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
             <div className="bg-charcoal-deep/90 p-3.5 rounded-sm border border-white/10 space-y-2.5 text-left">
               <div className="flex items-center justify-between">
                 <span className="text-[11px] font-mono text-stone-300 font-bold uppercase tracking-wider flex items-center gap-1.5">
-                  <Wifi className="w-3.5 h-3.5 text-citron" />
-                  Mạng phát phòng cho điện thoại
+                  <Cloud className="w-3.5 h-3.5 text-citron" />
+                  Mạng phát QR & Link cho điện thoại
                 </span>
                 <span className="text-[10px] font-mono text-citron font-semibold">
-                  {hostType === "WIFI" && (detectedLanIp ? `Wi-Fi: ${detectedLanIp}` : "Tự động")}
-                  {hostType === "LOCALHOST" && "Localhost"}
+                  {hostType === "PRODUCTION" && "Production Cloud (Vercel)"}
+                  {hostType === "WIFI" && (detectedLanIp ? `Wi-Fi: ${detectedLanIp}` : "192.168.0.101")}
+                  {hostType === "LOCALHOST" && "Localhost:3000"}
                   {hostType === "CUSTOM" && "Tùy chỉnh"}
                 </span>
               </div>
 
-              {/* Selector Tabs */}
-              <div className="grid grid-cols-3 gap-1 p-1 bg-black/40 rounded border border-white/10 text-[11px] font-mono">
+              {/* Selector Tabs (4 Modes) */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-1 p-1 bg-black/40 rounded border border-white/10 text-[11px] font-mono">
+                <button
+                  type="button"
+                  onClick={() => setHostType("PRODUCTION")}
+                  className={`py-1.5 px-2 rounded text-center transition-all flex items-center justify-center gap-1 ${
+                    hostType === "PRODUCTION"
+                      ? "bg-citron text-carbon font-bold shadow-xs"
+                      : "text-stone-400 hover:text-white"
+                  }`}
+                  title="Khuyên dùng cho toàn bộ sinh viên: Hoạt động trên mọi mạng 4G/5G và Wi-Fi"
+                >
+                  <Cloud className="w-3 h-3 flex-shrink-0" />
+                  <span>Vercel Cloud</span>
+                </button>
                 <button
                   type="button"
                   onClick={() => setHostType("WIFI")}
@@ -280,9 +299,9 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
                       ? "bg-citron text-carbon font-bold shadow-xs"
                       : "text-stone-400 hover:text-white"
                   }`}
-                  title="Khuyên dùng cho điện thoại trong cùng lớp học / phòng Wi-Fi"
+                  title="Dành cho điện thoại trong cùng lớp học / phòng Wi-Fi cục bộ"
                 >
-                  <Wifi className="w-3 h-3" />
+                  <Wifi className="w-3 h-3 flex-shrink-0" />
                   <span>Wi-Fi LAN</span>
                 </button>
                 <button
@@ -295,7 +314,7 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
                   }`}
                   title="Chỉ mở trên máy tính này để thử nghiệm"
                 >
-                  <Laptop className="w-3 h-3" />
+                  <Laptop className="w-3 h-3 flex-shrink-0" />
                   <span>Máy này</span>
                 </button>
                 <button
@@ -306,11 +325,34 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
                       ? "bg-citron text-carbon font-bold shadow-xs"
                       : "text-stone-400 hover:text-white"
                   }`}
-                  title="Nhập domain / Ngrok / Cloudflare Tunnel cho sinh viên dùng 4G"
+                  title="Nhập domain / Ngrok / Cloudflare Tunnel tùy ý"
                 >
-                  <Globe className="w-3 h-3" />
+                  <Globe className="w-3 h-3 flex-shrink-0" />
                   <span>Tùy chỉnh</span>
                 </button>
+              </div>
+
+              {/* Mode Explanatory Helper Note */}
+              <div className="text-[11px] text-stone-300 font-body leading-snug pt-0.5">
+                {hostType === "PRODUCTION" && (
+                  <p className="text-citron/90">
+                    ☁ <strong>Đường dẫn Vercel Cloud:</strong>{" "}
+                    <code className="text-white bg-black/40 px-1 py-0.5 rounded text-[10px]">https://social-strata-vietnam.vercel.app</code>{" "}
+                    — Mọi sinh viên quét mã đều mở ngay lập tức bằng 4G, 5G hoặc bất kỳ Wi-Fi nào.
+                  </p>
+                )}
+                {hostType === "WIFI" && (
+                  <p className="text-amber-300/90">
+                    📶 <strong>Đường dẫn Wi-Fi LAN:</strong>{" "}
+                    <code className="text-white bg-black/40 px-1 py-0.5 rounded text-[10px]">http://{detectedLanIp || "192.168.0.101"}:3000</code>{" "}
+                    — Điện thoại sinh viên cần bắt chung mạng Wi-Fi với laptop giảng viên.
+                  </p>
+                )}
+                {hostType === "LOCALHOST" && (
+                  <p className="text-stone-400">
+                    💻 <strong>Đường dẫn Localhost:</strong> Thích hợp khi mở tab trình duyệt khác trên cùng máy tính để test thử.
+                  </p>
+                )}
               </div>
 
               {/* Custom URL Input if selected */}
@@ -329,17 +371,30 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
                 </div>
               )}
 
-              {/* Wi-Fi Guidance Alert */}
-              <div className="p-2.5 rounded bg-white/5 border border-citron/20 text-[11px] font-sans text-stone-300 leading-normal space-y-1">
-                <p>
-                  📱 <strong>Để điện thoại quét mã vào được:</strong> Điện thoại của sinh viên cần kết nối <strong>cùng mạng Wi-Fi</strong> với máy tính này (hoặc máy tính bật Mobile Hotspot cho điện thoại bắt).
-                </p>
-                {detectedLanIp && (
-                  <p className="text-citron font-mono text-[10px]">
-                    📍 Địa chỉ mạng Wi-Fi của máy bạn: <strong>http://{detectedLanIp}:3000</strong>
+              {/* Guidance Alerts according to active mode */}
+              {hostType === "PRODUCTION" && (
+                <div className="p-2.5 rounded bg-emerald-950/40 border border-emerald-500/30 text-[11px] font-sans text-stone-200 leading-normal space-y-1">
+                  <p>
+                    ☁ <strong>Đang phát qua Vercel Cloud:</strong> Sinh viên có thể dùng bất kỳ mạng 4G/5G hoặc Wi-Fi nào để quét mã QR và tham gia trực tiếp.
                   </p>
-                )}
-              </div>
+                  <p className="text-citron font-mono text-[10px]">
+                    📍 Địa chỉ Web chính thức: <strong>https://social-strata-vietnam.vercel.app</strong>
+                  </p>
+                </div>
+              )}
+
+              {hostType === "WIFI" && (
+                <div className="p-2.5 rounded bg-amber-950/40 border border-amber-500/30 text-[11px] font-sans text-stone-200 leading-normal space-y-1">
+                  <p>
+                    📱 <strong>Để điện thoại quét mã vào được mạng LAN:</strong> Điện thoại của sinh viên cần kết nối <strong>cùng mạng Wi-Fi</strong> với máy tính này (hoặc bật Mobile Hotspot trên máy tính cho điện thoại kết nối).
+                  </p>
+                  {detectedLanIp && (
+                    <p className="text-citron font-mono text-[10px]">
+                      📍 Địa chỉ mạng Wi-Fi của máy bạn: <strong>http://{detectedLanIp}:3000</strong>
+                    </p>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Host Game Settings Panel */}

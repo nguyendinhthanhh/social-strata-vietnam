@@ -137,3 +137,4 @@ Tất cả ảnh chụp đã được ghi lại tự động trong thư mục `t
 
 1. **Hiển thị hình ảnh tư liệu cục bộ:** Hình ảnh sử dụng là ảnh tư liệu từ slide giảng viên và ảnh báo chí giấy phép mở. Trong trường hợp chạy offline hoàn toàn không có internet, hệ thống tự động hiển thị thẻ màu đại diện gradient nhẹ và biểu tượng vector đảm bảo không làm gián đoạn trải nghiệm.
 2. **Kéo thả chuột chuyên sâu trên máy tính bảng (Touch Drag-and-Drop):** Trên thiết bị màn hình cảm ứng nhỏ, thao tác chạm trực tiếp (tap-to-match) mang lại độ phản hồi và độ chính xác cao hơn thao tác kéo thả ngón tay (vốn dễ gây xung đột với thao tác cuộn trang). Do đó, giao diện di động mặc định ưu tiên hoàn toàn cơ chế tap-to-match tối ưu.
+
