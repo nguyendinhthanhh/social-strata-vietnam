@@ -106,7 +106,7 @@ export const GameHub: React.FC<GameHubProps> = ({
         <h3 className="font-display font-black text-2xl sm:text-4xl text-white">
           ĐẤU TRƯỜNG TRI THỨC — MLN131 LIVE
         </h3>
-        <p className="text-sm sm:text-base font-serif text-stone-300 leading-relaxed">
+        <p className="text-sm sm:text-base font-body text-stone-300 leading-relaxed">
           Không gian tranh tài trắc nghiệm thời gian thực dành cho giảng đường và nhóm học tập. 
           Bộ 15 câu hỏi học thuật chuẩn môn học (tùy chọn linh hoạt 10–15 câu) chia làm 3 vòng thi (Vòng 1: Phản xạ tri thức; Vòng 2: Ai giữ vai trò gì?; Vòng 3: Giải mã xã hội &amp; liên minh, nhân điểm x1.5). 
           Tính điểm chuẩn xác theo mili-giây phản xạ và chuỗi đúng với bảng vàng vinh danh trực tiếp.
@@ -134,7 +134,7 @@ export const GameHub: React.FC<GameHubProps> = ({
               <h4 className="font-display font-bold text-xl text-white">
                 Tạo Phòng Đấu Mới (Host Deck)
               </h4>
-              <p className="text-xs sm:text-sm font-serif text-stone-300 leading-relaxed">
+              <p className="text-xs sm:text-sm font-body text-stone-300 leading-relaxed">
                 Chiếu màn hình lớn trên máy chiếu. Tự động sinh mã phòng và mã QR. Toàn quyền điều khiển nhịp độ vòng thi và phân tích đáp án.
               </p>
             </div>
@@ -173,7 +173,7 @@ export const GameHub: React.FC<GameHubProps> = ({
               <h4 className="font-display font-bold text-xl text-white">
                 Vào Thi Đấu Bằng Điện Thoại
               </h4>
-              <p className="text-xs sm:text-sm font-serif text-stone-300 leading-relaxed">
+              <p className="text-xs sm:text-sm font-body text-stone-300 leading-relaxed">
                 Nhập mã phòng 5 ký tự và biệt danh. Bấm 4 nút cảm ứng màu sắc siêu nhạy. Tự động lưu tiến trình và tính điểm theo thời gian thực.
               </p>
             </div>

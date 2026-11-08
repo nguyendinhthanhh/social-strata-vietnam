@@ -19,7 +19,7 @@
   --color-paper-pure: #FFFFFF;
 
   /* Typography Stacks */
-  --font-family-display: "Playfair Display", "Fraunces", Georgia, serif;
+  --font-family-display: "Playfair Display", "Fraunces", "Be Vietnam Pro", serif;
   --font-family-body: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-family-mono: "JetBrains Mono", Consolas, monospace;
 

@@ -17,7 +17,7 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  subsets: ["vietnamese", "latin"],
+  subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-family-mono",
   display: "swap",

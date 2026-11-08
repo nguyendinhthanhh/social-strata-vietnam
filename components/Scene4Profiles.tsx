@@ -365,7 +365,7 @@ export const Scene4Profiles: React.FC<Scene4ProfilesProps> = ({
                     {activeProfile.name}
                   </h3>
 
-                  <p className="font-serif italic text-base sm:text-lg text-stone-700 leading-relaxed border-l-2 border-vermilion pl-4">
+                  <p className="font-body italic font-medium text-base sm:text-lg text-stone-700 dark:text-stone-300 leading-relaxed border-l-2 border-vermilion pl-4">
                     &ldquo;{activeProfile.subtitle}&rdquo;
                   </p>
 

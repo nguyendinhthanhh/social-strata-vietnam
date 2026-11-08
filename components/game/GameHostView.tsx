@@ -216,7 +216,7 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
               <h3 className="font-display text-3xl font-bold text-white">
                 Sẵn sàng tranh tài
               </h3>
-              <p className="text-sm text-stone-300 font-serif leading-relaxed">
+              <p className="text-sm text-stone-300 font-body leading-relaxed">
                 Sinh viên quét mã QR bằng điện thoại hoặc truy cập web, nhập mã phòng{" "}
                 <strong className="text-citron font-mono text-base">{roomCode}</strong> và biệt danh để vào trận.
               </p>
@@ -400,7 +400,7 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
             </div>
 
             {gameState.totalParticipants === 0 ? (
-              <div className="py-12 text-center text-stone-400 font-serif italic space-y-2">
+              <div className="py-12 text-center text-stone-400 font-body italic space-y-2">
                 <div className="w-12 h-12 mx-auto rounded-full bg-white/5 flex items-center justify-center text-stone-500">
                   <Users className="w-6 h-6 animate-pulse" />
                 </div>
@@ -634,7 +634,7 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
                     </button>
                   )}
                 </div>
-                <p className="text-sm font-serif italic text-stone-200 leading-relaxed">
+                <p className="text-sm font-body italic text-stone-200 leading-relaxed">
                   {gameState.question.explanation}
                 </p>
                 {gameState.question.sourceLabel && (
@@ -658,7 +658,7 @@ export const GameHostView: React.FC<GameHostViewProps> = ({
             <h3 className="font-display text-3xl sm:text-4xl font-black text-white">
               BẢNG VÀNG ĐẠI HỘI TRI THỨC
             </h3>
-            <p className="text-sm font-serif text-stone-300">
+            <p className="text-sm font-body text-stone-300">
               Vinh danh các sinh viên có điểm số lý luận và tốc độ phản xạ xuất sắc nhất
             </p>
           </div>

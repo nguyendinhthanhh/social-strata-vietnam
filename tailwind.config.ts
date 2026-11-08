@@ -26,10 +26,10 @@ const config: Config = {
         "paper-pure": "#FFFFFF",
       },
       fontFamily: {
-        display: ["var(--font-family-display)", "Georgia", "serif"],
+        display: ["var(--font-family-display)", "var(--font-family-body)", "serif"],
         body: ["var(--font-family-body)", "sans-serif"],
         mono: ["var(--font-family-mono)", "monospace"],
-        serif: ["var(--font-family-display)", "Georgia", "serif"],
+        serif: ["var(--font-family-display)", "var(--font-family-body)", "serif"],
         sans: ["var(--font-family-body)", "sans-serif"],
       },
       fontSize: {

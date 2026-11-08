@@ -238,7 +238,7 @@ export const GamePlayerView: React.FC<GamePlayerViewProps> = ({
           <h3 className="font-display font-black text-2xl sm:text-3xl text-white">
             Vào Trận Đấu
           </h3>
-          <p className="text-xs sm:text-sm font-serif text-stone-300">
+          <p className="text-xs sm:text-sm font-body text-stone-300">
             Nhập mã phòng từ màn hình giảng viên để cùng cả lớp tranh tài trực tiếp
           </p>
         </div>
@@ -366,7 +366,7 @@ export const GamePlayerView: React.FC<GamePlayerViewProps> = ({
             <h4 className="font-display font-bold text-xl text-white">
               Đã Tham Gia Phòng Đấu!
             </h4>
-            <p className="text-sm font-serif text-stone-300">
+            <p className="text-sm font-body text-stone-300">
               Xin chào <strong className="text-citron">{session.nickname}</strong>! Vui lòng nhìn lên màn hình lớn và đợi giảng viên khởi động trận đấu...
             </p>
           </div>
@@ -488,7 +488,7 @@ export const GamePlayerView: React.FC<GamePlayerViewProps> = ({
                 <XCircle className="w-5 h-5 text-red-400" />
                 <span>RẤT TIẾC, CHƯA ĐÚNG!</span>
               </div>
-              <p className="text-xs font-serif text-stone-300">
+              <p className="text-xs font-body text-stone-300">
                 Đáp án chính xác là{" "}
                 <strong className="text-citron">
                   {optionLetters[gameState.question.correctIndex ?? 0]}
@@ -503,7 +503,7 @@ export const GamePlayerView: React.FC<GamePlayerViewProps> = ({
             <span className="text-[11px] font-mono text-citron font-bold uppercase tracking-wider block">
               LUẬN CỨ HỌC THUẬT:
             </span>
-            <p className="text-xs sm:text-sm font-serif italic text-stone-200 leading-relaxed">
+            <p className="text-xs sm:text-sm font-body italic text-stone-200 leading-relaxed">
               {gameState.question.explanation}
             </p>
             {gameState.question.sourceLabel && (
@@ -536,7 +536,7 @@ export const GamePlayerView: React.FC<GamePlayerViewProps> = ({
             <h3 className="font-display font-black text-2xl text-white">
               CHÚC MỪNG {session.nickname.toUpperCase()}!
             </h3>
-            <p className="text-sm font-serif text-stone-300">
+            <p className="text-sm font-body text-stone-300">
               Bạn đã hoàn thành trọn vẹn {gameState.totalQuestions} thử thách học thuật MLN131
             </p>
           </div>
