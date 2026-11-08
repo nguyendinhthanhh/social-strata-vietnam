@@ -140,3 +140,22 @@
      - Verified synchronized question display, speed bonus, duplicate submission blocking, server auto-reveal, reload reconnection via `sessionStorage`, and final podium display.
      - Captured 5 dedicated game screenshots: `game-lobby.png`, `game-question-host.png`, `game-question-player.png`, `game-leaderboard.png`, `game-podium.png`.
      - Full test suite: 24/24 PASS (100%). Zero ESLint warnings, zero TypeScript errors.
+
+
+- 2026-11-08: [MILESTONE 16 - INTERACTIVE SOCIAL ROLE MATCHING MINI-GAME: GHÉP VAI TRÒ]
+  1. Educational Architecture & Academic Safety:
+     - Implemented "GHÉP VAI TRÒ — NHỮNG MẢNH GHÉP XÃ HỘI" directly inside Scene 04 (`#scene-04`), positioned after 6 profile exploration cards and before Scene 05.
+     - Preserved academic safety pillar: Women and Youth treated strictly as cross-cutting demographic groups (`isDemographicGroup: true`), avoiding misleading exclusive or zero-sum questions.
+     - Built 7 verified tasks with distinctive keywords, authentic slide references (MLN131 Tiết 18, 19, 20), Party Resolutions (20-NQ/TW, 19-NQ/TW, 45-NQ/TW, 41-NQ/TW, 11-NQ/TW), and dialectical `whyNotOthers` rationale.
+  2. Frontend & UX Implementation:
+     - Created `lib/matchingGameTypes.ts`, `lib/matchingGameData.ts`, and `components/game/RoleMatchingGame.tsx`.
+     - Integrated Teaser Banner in `components/Scene4Profiles.tsx` with smooth-scroll entry to `#role-matching-section`.
+     - Desktop interaction: Click/tap matching and accessible keyboard navigation with visual feedback.
+     - Mobile interaction: Tap-to-match with $\ge 44\text{px}$ touch targets, responsive 320px-430px cards, zero horizontal overflow.
+     - Scoring engine: Attempt 1 = +100đ, Attempt 2 = +60đ, Attempt 3+ = +30đ, completion bonus = +100đ (Max 800đ).
+     - Completion podium with rank analysis, detailed per-task score breakdown, retry reset, and smooth jump to Scene 05.
+  3. Testing & Verification:
+     - Added `tests/role-matching.spec.ts` covering full 7-task flow and responsive mobile layout.
+     - Ran full Playwright regression suite: 26/26 tests PASS (100%).
+     - Captured 4 verified screenshots: `role-matching-desktop-start.png`, `role-matching-desktop-matched.png`, `role-matching-desktop-completion.png`, `role-matching-mobile-390.png`.
+     - Documented in `docs/ROLE_MATCHING_GAME_REPORT.md`, `docs/ROLE_MATCHING_AUDIT.md`, and `docs/ROLE_MATCHING_DESIGN.md`.

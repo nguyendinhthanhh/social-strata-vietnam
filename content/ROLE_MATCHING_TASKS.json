@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Ghép Vai Trò — Những Mảnh Ghép Xã Hội",
+    "subtitle": "Mini-game tương tác củng cố nhận thức các lực lượng xã hội tiêu biểu (Phân cảnh 04)",
+    "course": "Chủ nghĩa xã hội khoa học (MLN131)",
+    "chapter": "Chủ đề 7, Chương 5: Cơ cấu xã hội – giai cấp và liên minh giai cấp, tầng lớp trong thời kỳ quá độ lên chủ nghĩa xã hội",
+    "auditor": "research-auditor",
+    "auditReportPath": "docs/ROLE_MATCHING_AUDIT.md",
+    "auditDate": "2026-11-08",
+    "totalTasks": 7,
+    "academicSafetyRules": [
+      "Phụ nữ và Thanh niên là lực lượng nhân khẩu học – xã hội giao thoa (intersectionality), không phải giai cấp kinh tế độc lập.",
+      "Không đặt câu hỏi loại trừ phi lý (zero-sum) vì trong chế độ XHCN mọi lực lượng đều đóng góp xây dựng đất nước.",
+      "Mỗi nhiệm vụ gắn với một hoạt động hoặc vị thế đặc trưng được Văn kiện và Bài giảng khẳng định.",
+      "Khối Liên minh Công – Nông – Trí thức là chỉnh thể hợp tác nền tảng chính trị – kinh tế – văn hóa, không phải một giai cấp đơn lẻ."
+    ]
+  },
+  "actors": [
+    {
+      "id": "cong-nhan",
+      "name": "Giai cấp Công nhân Việt Nam",
+      "shortName": "Công nhân",
+      "category": "Giai cấp kinh tế – xã hội cơ bản",
+      "isDemographicGroup": false,
+      "isAlliance": false,
+      "badgeColor": "vermilion",
+      "iconKey": "Briefcase",
+      "summary": "Đại diện phương thức sản xuất tiên tiến, lãnh đạo cách mạng thông qua Đảng Cộng sản, nòng cốt khối liên minh."
+    },
+    {
+      "id": "nong-dan",
+      "name": "Giai cấp Nông dân Việt Nam",
+      "shortName": "Nông dân",
+      "category": "Giai cấp kinh tế – xã hội cơ bản",
+      "isDemographicGroup": false,
+      "isAlliance": false,
+      "badgeColor": "sage",
+      "iconKey": "HeartHandshake",
+      "summary": "Chủ thể của quá trình phát triển nông nghiệp, kinh tế nông thôn và xây dựng nông thôn mới; giữ vị trí chiến lược."
+    },
+    {
+      "id": "tri-thuc",
+      "name": "Đội ngũ Trí thức Việt Nam",
+      "shortName": "Trí thức",
+      "category": "Tầng lớp xã hội lao động trí óc sáng tạo",
+      "isDemographicGroup": false,
+      "isAlliance": false,
+      "badgeColor": "navy",
+      "iconKey": "GraduationCap",
+      "summary": "Lực lượng lao động sáng tạo đặc biệt quan trọng trong CNH, HĐH, hội nhập quốc tế và xây dựng kinh tế tri thức."
+    },
+    {
+      "id": "doanh-nhan",
+      "name": "Đội ngũ Doanh nhân Việt Nam",
+      "shortName": "Doanh nhân",
+      "category": "Tầng lớp xã hội đặc biệt phát triển nhanh",
+      "isDemographicGroup": false,
+      "isAlliance": false,
+      "badgeColor": "mustard",
+      "iconKey": "Store",
+      "summary": "Tổ chức huy động các nguồn lực sản xuất, kết nối chuỗi cung ứng, giải quyết việc làm và kiến tạo thương hiệu quốc gia."
+    },
+    {
+      "id": "phu-nu",
+      "name": "Phụ nữ Việt Nam",
+      "shortName": "Phụ nữ",
+      "category": "Nhóm nhân khẩu học xã hội (theo Giới tính)",
+      "isDemographicGroup": true,
+      "isAlliance": false,
+      "badgeColor": "purple",
+      "iconKey": "Sparkles",
+      "summary": "Lực lượng lao động đông đảo giao thoa trong mọi giai tầng, giữ vị trí trung tâm trong đời sống gia đình và tái sản xuất con người."
+    },
+    {
+      "id": "thanh-nien",
+      "name": "Đội ngũ Thanh niên Việt Nam",
+      "shortName": "Thanh niên",
+      "category": "Nhóm nhân khẩu học xã hội (theo Độ tuổi 16–30)",
+      "isDemographicGroup": true,
+      "isAlliance": false,
+      "badgeColor": "teal",
+      "iconKey": "Flame",
+      "summary": "Rường cột của nước nhà, chủ nhân tương lai, lực lượng xung kích trong chuyển đổi số, đổi mới sáng tạo và bảo vệ Tổ quốc."
+    },
+    {
+      "id": "lien-minh",
+      "name": "Khối Liên minh Công – Nông – Trí thức",
+      "shortName": "Khối Liên minh",
+      "category": "Khối liên minh chính trị – kinh tế – văn hóa nền tảng",
+      "isDemographicGroup": false,
+      "isAlliance": true,
+      "badgeColor": "gold",
+      "iconKey": "Layers",
+      "summary": "Nền tảng chính trị – xã hội của chế độ, sự gắn kết khách quan của các lĩnh vực kinh tế tạo sức mạnh tổng hợp xây dựng CNXH."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-01",
+      "order": 1,
+      "targetActorId": "cong-nhan",
+      "missionCode": "TIEN-PHONG-SX",
+      "missionTitle": "Tiên phong sản xuất hiện đại và nòng cốt chính trị",
+      "scenarioPrompt": "Trong một tổ hợp công nghiệp chế tạo thông minh và cảng biển logistics tự động hóa, lực lượng này trực tiếp vận hành hệ thống máy móc hiện đại với tác phong kỷ luật công nghiệp nghiêm ngặt; đồng thời là giai cấp giữ vai trò lãnh đạo cách mạng thông qua đội tiền phong là Đảng Cộng sản Việt Nam.",
+      "distinctiveKeywords": [
+        "Đại diện phương thức sản xuất tiên tiến",
+        "Lãnh đạo cách mạng thông qua Đảng tiền phong",
+        "Lực lượng nòng cốt trong khối liên minh",
+        "Tác phong và kỷ luật công nghiệp"
+      ],
+      "academicExplanation": "Theo MLN131 Tiết 20 Slide 5 và Tiết 19 Slide 8, Giai cấp công nhân Việt Nam đại diện cho phương thức sản xuất tiên tiến nhất của thời đại, giữ vị trí tiên phong trong sự nghiệp công nghiệp hóa, hiện đại hóa và là lực lượng nòng cốt trong khối liên minh Công – Nông – Trí thức dưới sự lãnh đạo của Đảng.",
+      "whyNotOthers": {
+        "tri-thuc": "Trí thức là người lập trình thuật toán và thiết kế giải pháp công nghệ, nhưng giai cấp công nhân mới là người trực tiếp vận hành dây chuyền đại công nghiệp và giữ địa vị chính trị lãnh đạo cách mạng thông qua Đảng Cộng sản.",
+        "doanh-nhan": "Doanh nhân đầu tư vốn và tổ chức doanh nghiệp, nhưng giai cấp công nhân mới là giai cấp đại diện cho phương thức sản xuất tiên tiến và là hạt nhân nòng cốt của liên minh chính trị.",
+        "nong-dan": "Nông dân gắn với địa bàn nông thôn và sản xuất nông nghiệp, trong khi giai cấp công nhân gắn với nền đại công nghiệp hiện đại."
+      },
+      "sourceReference": {
+        "primarySourceId": "C-20-05",
+        "additionalSourceIds": ["C-19-08", "C-VK-XIII"],
+        "slideCitation": "MLN131 Tiết 20, Slide 5; Tiết 19, Slide 8",
+        "legalPolicyBasis": "Nghị quyết số 20-NQ/TW về tiếp tục xây dựng giai cấp công nhân Việt Nam thời kỳ đẩy mạnh CNH, HĐH đất nước"
+      },
+      "academicAuditVerdict": "VERIFIED"
+    },
+    {
+      "id": "task-02",
+      "order": 2,
+      "targetActorId": "nong-dan",
+      "missionCode": "CHU-THE-NONG-THON",
+      "missionTitle": "Chủ thể nông nghiệp sinh thái và xây dựng nông thôn mới",
+      "scenarioPrompt": "Trên những cánh đồng mẫu lớn và vùng châu thổ phù sa, lực lượng này thực hiện quyền sử dụng đất hợp pháp, tổ chức canh tác nông sản chất lượng cao giảm phát thải, tham gia hợp tác xã kiểu mới, tự nguyện hiến đất làm đường giao thông, đồng thời giữ gìn hồn cốt văn hóa truyền thống làng xóm và bảo vệ môi trường sinh thái.",
+      "distinctiveKeywords": [
+        "Chủ thể của quá trình phát triển nông nghiệp",
+        "Xây dựng nông thôn mới",
+        "Vị trí chiến lược trong CNH, HĐH nông nghiệp, nông thôn",
+        "Bảo đảm an ninh lương thực quốc gia"
+      ],
+      "academicExplanation": "Theo MLN131 Tiết 20 Slide 6 và Nghị quyết số 19-NQ/TW, Giai cấp nông dân có vị trí chiến lược trong CNH, HĐH nông nghiệp, nông thôn; là chủ thể, trung tâm của quá trình phát triển nông nghiệp, kinh tế nông thôn và xây dựng nông thôn mới. Lưu ý học thuật: Nông dân có quyền sử dụng đất (QSDĐ) trên đất đai thuộc sở hữu toàn dân do Nhà nước đại diện chủ sở hữu.",
+      "whyNotOthers": {
+        "doanh-nhan": "Doanh nghiệp nông nghiệp hỗ trợ bao tiêu và chế biến nông sản, nhưng người nông dân mới là chủ thể trung tâm trực tiếp canh tác và kiến thiết diện mạo văn hóa nông thôn mới.",
+        "cong-nhan": "Công nhân sản xuất máy cày, máy gặt và chế biến công nghiệp, nhưng nông dân mới là chủ thể quản trị ruộng đồng và gìn giữ văn hóa làng quê.",
+        "tri-thuc": "Trí thức nghiên cứu lai tạo giống lúa, còn nông dân là người trực tiếp hiện thực hóa mùa màng trên đồng ruộng."
+      },
+      "sourceReference": {
+        "primarySourceId": "C-20-06",
+        "additionalSourceIds": ["C-LAND-LAW", "C-VK-XIII"],
+        "slideCitation": "MLN131 Tiết 20, Slide 6",
+        "legalPolicyBasis": "Hiến pháp 2013 (Điều 53, 54), Luật Đất đai, Nghị quyết số 19-NQ/TW về nông nghiệp, nông dân, nông thôn"
+      },
+      "academicAuditVerdict": "VERIFIED"
+    },
+    {
+      "id": "task-03",
+      "order": 3,
+      "targetActorId": "tri-thuc",
+      "missionCode": "SANG-TAO-TRI-THUC",
+      "missionTitle": "Lao động sáng tạo đặc biệt quan trọng và kinh tế tri thức",
+      "scenarioPrompt": "Trong các phòng thí nghiệm quốc gia, viện nghiên cứu lúa giống và trung tâm vi mạch, lực lượng này miệt mài nghiên cứu cơ bản, lai tạo những bộ giống cây trồng thích ứng biến đổi khí hậu, thiết kế kiến trúc chuyển đổi số và thực hiện tư vấn, phản biện khoa học độc lập phục vụ hoạch định chủ trương, chính sách của đất nước.",
+      "distinctiveKeywords": [
+        "Lao động sáng tạo đặc biệt quan trọng",
+        "Nghiên cứu khoa học và chuyển giao công nghệ",
+        "Xây dựng nền kinh tế tri thức",
+        "Tư vấn, phản biện khoa học độc lập"
+      ],
+      "academicExplanation": "Theo MLN131 Tiết 20 Slide 7 và Nghị quyết số 45-NQ/TW, Đội ngũ trí thức là lực lượng lao động sáng tạo đặc biệt quan trọng trong sự nghiệp CNH, HĐH và hội nhập quốc tế, xây dựng kinh tế tri thức; giữ vai trò quyết định trong việc tạo ra công nghệ nguồn, phát minh giống mới và cung cấp luận cứ khoa học cho đường lối của Đảng.",
+      "whyNotOthers": {
+        "thanh-nien": "Thanh niên rất năng động tiếp cận công nghệ, nhưng 'lao động sáng tạo đặc biệt quan trọng trong xây dựng kinh tế tri thức' và tư vấn, phản biện chính sách chuyên sâu là sứ mệnh phân công xã hội của đội ngũ trí thức mọi thế hệ.",
+        "cong-nhan": "Công nhân có nhiều sáng kiến cải tiến quy trình trong xưởng máy, nhưng nghiên cứu hàn lâm, lai tạo giống mới và lý luận chính sách là chức năng đặc thù của đội ngũ trí thức.",
+        "doanh-nhan": "Doanh nhân thương mại hóa giải pháp, còn trí thức là người trực tiếp phát minh và sáng tạo ra tri thức khoa học."
+      },
+      "sourceReference": {
+        "primarySourceId": "C-20-07",
+        "additionalSourceIds": ["C-19-08", "C-VK-XIII"],
+        "slideCitation": "MLN131 Tiết 20, Slide 7",
+        "legalPolicyBasis": "Nghị quyết số 45-NQ/TW về tiếp tục xây dựng và phát huy vai trò của đội ngũ trí thức đáp ứng yêu cầu phát triển đất nước"
+      },
+      "academicAuditVerdict": "VERIFIED"
+    },
+    {
+      "id": "task-04",
+      "order": 4,
+      "targetActorId": "doanh-nhan",
+      "missionCode": "KET-NOI-DOANH-NGHIEP",
+      "missionTitle": "Tổ chức sản xuất kinh doanh và kiến tạo thương hiệu quốc gia",
+      "scenarioPrompt": "Trước những biến động của thị trường quốc tế, lực lượng này chủ động huy động các nguồn lực vốn đầu tư, đổi mới mô hình quản trị doanh nghiệp, ký hợp đồng bao tiêu nông sản cho hàng vạn hộ nông dân, xây dựng hệ thống logistics silô bảo quản hiện đại và đưa những thương hiệu sản phẩm Việt Nam vươn tầm thế giới.",
+      "distinctiveKeywords": [
+        "Tầng lớp xã hội đặc biệt phát triển nhanh",
+        "Tổ chức huy động và liên kết các nguồn lực sản xuất",
+        "Kết nối cung cầu, mở rộng thị trường và chuỗi giá trị",
+        "Kiến tạo việc làm, nộp ngân sách và trách nhiệm xã hội"
+      ],
+      "academicExplanation": "Theo MLN131 Tiết 20 Slide 8, Tiết 18 Slide 12 và Nghị quyết số 41-NQ/TW, Đội ngũ doanh nhân là tầng lớp xã hội đặc biệt được Đảng ta chủ trương xây dựng thành một đội ngũ vững mạnh, giữ vai trò đầu tàu tổ chức sản xuất kinh doanh, kết nối thị trường, đóng góp lớn vào GDP, giải quyết việc làm và thúc đẩy hội nhập kinh tế quốc tế.",
+      "whyNotOthers": {
+        "cong-nhan": "Công nhân trực tiếp vận hành sản xuất ra của cải, nhưng việc chấp nhận rủi ro thương trường, huy động vốn, tổ chức chuỗi cung ứng và kiến tạo thương hiệu doanh nghiệp là chức năng đặc thù của đội ngũ doanh nhân.",
+        "nong-dan": "Nông dân trực tiếp cấy trồng thu hoạch, còn doanh nhân ký hợp đồng bao tiêu, chế biến sâu và đưa hạt gạo vào hệ sinh thái siêu thị toàn cầu.",
+        "tri-thuc": "Trí thức nghiên cứu giải pháp kỹ thuật, còn doanh nhân đưa giải pháp đó vào mô hình sản xuất kinh doanh có lãi và giải quyết việc làm."
+      },
+      "sourceReference": {
+        "primarySourceId": "C-20-08",
+        "additionalSourceIds": ["C-18-12", "C-VK-XIII"],
+        "slideCitation": "MLN131 Tiết 20, Slide 8; Tiết 18, Slide 12",
+        "legalPolicyBasis": "Nghị quyết số 41-NQ/TW của Bộ Chính trị về xây dựng và phát huy vai trò của đội ngũ doanh nhân Việt Nam trong thời kỳ mới"
+      },
+      "academicAuditVerdict": "VERIFIED"
+    },
+    {
+      "id": "task-05",
+      "order": 5,
+      "targetActorId": "phu-nu",
+      "missionCode": "GIAO-THOA-GIOI",
+      "missionTitle": "Lực lượng lao động to lớn, bình đẳng giới và trụ cột gia đình",
+      "scenarioPrompt": "Chiếm hơn một nửa dân số cả nước, lực lượng này hiện diện bền bỉ trên mọi mặt trận: từ nữ kỹ sư phòng thí nghiệm, nữ công nhân vi điện tử, nữ nông dân trên ruộng đồng cho đến nữ doanh nhân điều hành tập đoàn xuất khẩu tỷ đô; vừa đóng góp to lớn vào kinh tế xã hội, vừa giữ vị trí trung tâm chăm lo gia đình và nuôi dưỡng các thế hệ tương lai.",
+      "distinctiveKeywords": [
+        "Lực lượng lao động quan trọng và đông đảo",
+        "Hiện diện giao thoa bình đẳng giới trong mọi giai tầng",
+        "Trụ cột trong đời sống gia đình và tái sản xuất con người",
+        "Nhóm nhân khẩu học xã hội (theo Giới tính)"
+      ],
+      "academicExplanation": "Theo MLN131 Tiết 20 Slide 9 và Nghị quyết số 11-NQ/TW, Phụ nữ là lực lượng quan trọng và đông đảo trong đội ngũ người lao động, thể hiện vai trò to lớn trong mọi lĩnh vực đời sống xã hội và gia đình. Lưu ý học thuật cốt lõi: Phụ nữ KHÔNG PHẢI là giai cấp kinh tế độc lập, mà là nhóm nhân khẩu học xã hội phân loại theo giới tính, hiện diện giao thoa xuyên suốt trong mọi giai cấp, tầng lớp.",
+      "whyNotOthers": {
+        "cong-nhan": "Giai cấp công nhân xác định theo quan hệ sản xuất công nghiệp; trong khi phụ nữ là nhóm xã hội theo giới tính, có mặt ở cả công nhân, nông dân, trí thức và doanh nhân.",
+        "nong-dan": "Nông dân gắn với nông nghiệp; còn phụ nữ hiện diện ở mọi ngành nghề và giữ vị trí trung tâm trong đời sống gia đình và giáo dục thế hệ tương lai.",
+        "thanh-nien": "Thanh niên là phân nhóm theo độ tuổi (16–30), còn phụ nữ là phân nhóm theo giới tính bao gồm mọi lứa tuổi của nữ giới."
+      },
+      "sourceReference": {
+        "primarySourceId": "C-20-09",
+        "additionalSourceIds": ["C-VK-XIII"],
+        "slideCitation": "MLN131 Tiết 20, Slide 9",
+        "legalPolicyBasis": "Nghị quyết số 11-NQ/TW của Bộ Chính trị về công tác phụ nữ thời kỳ đẩy mạnh CNH, HĐH đất nước"
+      },
+      "academicAuditVerdict": "VERIFIED"
+    },
+    {
+      "id": "task-06",
+      "order": 6,
+      "targetActorId": "thanh-nien",
+      "missionCode": "XUNG-KICH-TRE",
+      "missionTitle": "Rường cột nước nhà, xung kích chuyển đổi số và bảo vệ Tổ quốc",
+      "scenarioPrompt": "Là thế hệ công dân trẻ đầy khát vọng rèn luyện theo phương châm 'Tâm trong – Trí sáng – Hoài bão lớn', lực lượng này đi đầu làm chủ các nền tảng trí tuệ nhân tạo, tiên phong khởi nghiệp sáng tạo nông sản số, sẵn sàng tình nguyện đến những vùng biên cương hải đảo và xung kích bảo vệ toàn vẹn chủ quyền lãnh thổ của đất nước.",
+      "distinctiveKeywords": [
+        "Rường cột của nước nhà, chủ nhân tương lai",
+        "Lực lượng xung kích trong xây dựng và bảo vệ Tổ quốc",
+        "Đi đầu trong chuyển đổi số và khởi nghiệp đổi mới sáng tạo",
+        "Độ tuổi từ đủ 16 đến 30 tuổi (Luật Thanh niên 2020)"
+      ],
+      "academicExplanation": "Theo MLN131 Tiết 20 Slide 10 và Điều 1 Luật Thanh niên 2020, Thanh niên là rường cột của nước nhà, chủ nhân tương lai của đất nước, lực lượng xung kích trong xây dựng và bảo vệ Tổ quốc. Lưu ý học thuật cốt lõi: Thanh niên KHÔNG PHẢI là giai cấp kinh tế độc lập mà là nhóm nhân khẩu học xã hội theo độ tuổi (từ đủ 16 đến 30 tuổi), hiện diện giao thoa trong mọi giai cấp, tầng lớp.",
+      "whyNotOthers": {
+        "tri-thuc": "Trí thức là tầng lớp lao động trí tuệ không giới hạn độ tuổi; trong khi thuộc tính 'rường cột nước nhà, chủ nhân tương lai, lực lượng xung kích kế cận' gắn liền với nhóm nhân khẩu học thanh niên.",
+        "cong-nhan": "Giai cấp công nhân là giai cấp lãnh đạo cách mạng, còn thanh niên là thế hệ trẻ xung kích (bao gồm công nhân trẻ, thanh niên nông thôn, sinh viên, chiến sĩ lực lượng vũ trang).",
+        "phu-nu": "Phụ nữ phân loại theo giới tính, còn thanh niên phân loại theo độ tuổi (16–30 tuổi)."
+      },
+      "sourceReference": {
+        "primarySourceId": "C-20-10",
+        "additionalSourceIds": ["C-LTN-2020", "C-VK-XIII"],
+        "slideCitation": "MLN131 Tiết 20, Slide 10",
+        "legalPolicyBasis": "Luật Thanh niên số 57/2020/QH14 (Điều 1 quy định độ tuổi từ đủ 16 đến 30 tuổi)"
+      },
+      "academicAuditVerdict": "VERIFIED"
+    },
+    {
+      "id": "task-07",
+      "order": 7,
+      "targetActorId": "lien-minh",
+      "missionCode": "NEN-TANG-LIEN-MINH",
+      "missionTitle": "Nền tảng chính trị vững chắc và liên kết kinh tế chuỗi giá trị",
+      "scenarioPrompt": "Để tạo ra một chuỗi giá trị nông sản chất lượng cao xuất khẩu tỷ đô: nhà khoa học cung cấp giống lúa lai giảm phát thải, người nông dân trực tiếp canh tác chuẩn mực, công nhân vận hành nhà máy chế biến và dây chuyền đóng gói công nghiệp, doanh nhân tổ chức đầu tư và xúc tiến thương mại, dưới sự định hướng giữ vững độc lập và công bằng xã hội của Đảng và Nhà nước. Một chỉnh thể hợp tác mà thiếu một mắt xích thì toàn chuỗi sẽ gãy đổ.",
+      "distinctiveKeywords": [
+        "Nền tảng chính trị – xã hội của chế độ XHCN",
+        "Sự gắn kết khách quan giữa công nghiệp, nông nghiệp, dịch vụ và KH-CN",
+        "Cơ sở vật chất – kỹ thuật của liên minh (liên minh kinh tế)",
+        "Sức mạnh tổng hợp dưới sự lãnh đạo của Đảng Cộng sản"
+      ],
+      "academicExplanation": "Theo MLN131 Tiết 19 Slide 3, 5, 8, 9 và Tiết 20 Slide 12, Khối liên minh giai cấp, tầng lớp (nòng cốt là Công nhân – Nông dân – Trí thức) là sự liên kết hợp tác hỗ trợ nhau nhằm thực hiện nhu cầu lợi ích của các chủ thể và tạo động lực thực hiện thắng lợi mục tiêu CNXH. Xét về chính trị, đây là nền tảng cơ sở xã hội của chế độ; xét về kinh tế, đây là cơ sở vật chất – kỹ thuật của liên minh gắn kết công nghiệp, nông nghiệp và khoa học công nghệ.",
+      "whyNotOthers": {
+        "nong-dan": "Nông dân chỉ là một chủ thể trong khâu canh tác nguyên liệu, không thể tự mình chế biến sâu công nghiệp, thiết kế giống lúa mới hay điều tiết toàn bộ nền tảng chính trị của chế độ.",
+        "cong-nhan": "Công nhân là lực lượng nòng cốt lãnh đạo, nhưng sự nghiệp xây dựng CNXH và chuỗi giá trị bắt buộc phải liên minh bền chặt với nông dân và trí thức.",
+        "doanh-nhan": "Doanh nhân kết nối thị trường, nhưng chuỗi giá trị toàn diện và nền tảng chính trị của chế độ phải dựa trên khối liên minh nền tảng Công – Nông – Trí thức dưới sự lãnh đạo của Đảng."
+      },
+      "sourceReference": {
+        "primarySourceId": "C-19-08",
+        "additionalSourceIds": ["C-19-03", "C-19-05", "C-19-09", "C-20-12", "C-RICE-ILLUS"],
+        "slideCitation": "MLN131 Tiết 19, Slide 3, 5, 8, 9; Tiết 20, Slide 12",
+        "legalPolicyBasis": "Hiến pháp năm 2013 (Điều 2: Nhà nước CHXHCN Việt Nam do Nhân dân làm chủ; tất cả quyền lực nhà nước thuộc về Nhân dân mà nền tảng là liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức)"
+      },
+      "academicAuditVerdict": "VERIFIED"
+    }
+  ]
+}

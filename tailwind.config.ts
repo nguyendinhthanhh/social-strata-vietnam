@@ -29,6 +29,8 @@ const config: Config = {
         display: ["var(--font-family-display)", "Georgia", "serif"],
         body: ["var(--font-family-body)", "sans-serif"],
         mono: ["var(--font-family-mono)", "monospace"],
+        serif: ["var(--font-family-display)", "Georgia", "serif"],
+        sans: ["var(--font-family-body)", "sans-serif"],
       },
       fontSize: {
         "display-hero": "var(--font-size-display-hero)",

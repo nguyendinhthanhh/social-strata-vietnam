@@ -23,7 +23,9 @@ import {
   Layers,
   Camera,
   ChevronDown,
+  ArrowRight,
 } from "lucide-react";
+import { RoleMatchingGame } from "./game/RoleMatchingGame";
 
 interface Scene4ProfilesProps {
   onOpenSourceModal: (sourceId?: string) => void;
@@ -69,6 +71,7 @@ export const Scene4Profiles: React.FC<Scene4ProfilesProps> = ({
   const [activeProfileId, setActiveProfileId] = useState("cong-nhan");
   const [filterMode, setFilterMode] = useState<"all" | "classes" | "demographics">("all");
   const [isDetailExpanded, setIsDetailExpanded] = useState(false);
+  const [isMatchingGameOpen, setIsMatchingGameOpen] = useState(false);
 
   const filteredProfiles = SOCIAL_PROFILES.filter((p) => {
     if (filterMode === "classes") {
@@ -511,6 +514,49 @@ export const Scene4Profiles: React.FC<Scene4ProfilesProps> = ({
               </div>
             </motion.div>
           </AnimatePresence>
+        </div>
+
+        {/* Interactive Workshop Teaser & Role Matching Game Entry */}
+        <div id="role-matching-section" className="pt-8 border-t border-subtle space-y-6">
+          {!isMatchingGameOpen ? (
+            <div className="bg-carbon text-chalk rounded-md border border-white/10 p-6 sm:p-8 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 transition-all">
+              <div className="space-y-2 text-center md:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-sm bg-citron/20 text-citron font-mono text-xs font-bold uppercase tracking-widest">
+                  <Sparkles className="w-3.5 h-3.5 text-citron" />
+                  <span>THỬ THÁCH TƯƠNG TÁC • 7 NHIỆM VỤ ĐỊNH VỊ</span>
+                </div>
+                <h3 className="font-display font-black text-2xl sm:text-3xl text-white">
+                  Bạn hiểu vai trò của các giai tầng đến đâu?
+                </h3>
+                <p className="text-sm font-serif text-stone-300 max-w-2xl leading-relaxed">
+                  Vận dụng kiến thức lý luận MLN131 để định vị chính xác vị trí, vai trò và sứ mệnh lịch sử của 6 giai tầng xã hội cùng khối liên minh thông qua 7 lát cắt thực tiễn.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => {
+                  setIsMatchingGameOpen(true);
+                  setTimeout(() => {
+                    const el = document.getElementById("role-matching-section");
+                    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }, 120);
+                }}
+                className="px-8 py-3.5 rounded-sm bg-vermilion hover:bg-dark-red text-white font-mono text-sm font-bold uppercase tracking-wider transition-all duration-200 shadow-lg flex items-center gap-2 flex-shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-citron cursor-pointer"
+              >
+                <span>Bắt đầu ghép vai trò</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          ) : (
+            <RoleMatchingGame
+              onOpenSourceModal={onOpenSourceModal}
+              onProceedToScene05={() => {
+                const el = document.getElementById("scene-05");
+                if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+            />
+          )}
         </div>
 
         <div className="pt-6">
